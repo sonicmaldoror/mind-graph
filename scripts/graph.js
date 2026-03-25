@@ -182,8 +182,8 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
       .distance(d => {
         const src = typeof d.source === 'object' ? d.source : nodeMap.get(d.source);
         const tgt = typeof d.target === 'object' ? d.target : nodeMap.get(d.target);
-        if ((src && src.type === 'author') || (tgt && tgt.type === 'author')) return 30;
-        return 55;
+        if ((src && src.type === 'author') || (tgt && tgt.type === 'author')) return 35;
+        return 70;
       })
       .strength(d => {
         const src = typeof d.source === 'object' ? d.source : nodeMap.get(d.source);
@@ -192,7 +192,7 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
         return 0.25;
       }))
     .force('charge', d3.forceManyBody()
-      .strength(d => d.type === 'author' ? -40 : -100))
+      .strength(d => d.type === 'author' ? -60 : -180))
     .force('x', d3.forceX(d => familyCenters[d.family]?.x || width / 2).strength(0.1))
     .force('y', d3.forceY(d => familyCenters[d.family]?.y || height / 2).strength(0.1))
     .force('collide', d3.forceCollide(d => nodeRadius(d) + 4))
