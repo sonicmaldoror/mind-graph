@@ -44,6 +44,13 @@
     <svg id="graph-svg"></svg>
   </div>
 
+  <!-- Zoom controls -->
+  <div class="zoom-controls">
+    <button id="zoom-in" class="zoom-btn" title="Zoom avant">+</button>
+    <button id="zoom-out" class="zoom-btn" title="Zoom arri&egrave;re">&minus;</button>
+    <button id="zoom-reset" class="zoom-btn" title="R&eacute;initialiser le zoom" style="font-size:13px">&#8634;</button>
+  </div>
+
   <!-- Tooltip -->
   <div id="tooltip" class="tooltip" aria-hidden="true"></div>
 
@@ -61,11 +68,11 @@
           <span>Filiation</span>
         </div>
         <div class="legend-link-item">
-          <svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="#A32D2D" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
+          <svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--link-opposition)" stroke-width="1.5" stroke-dasharray="4,3"/></svg>
           <span>Opposition</span>
         </div>
         <div class="legend-link-item">
-          <svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="#4A90D9" stroke-width="1.5" stroke-dasharray="8,4"/></svg>
+          <svg width="30" height="10"><line x1="0" y1="5" x2="30" y2="5" stroke="var(--link-reformulation)" stroke-width="1.5" stroke-dasharray="8,4"/></svg>
           <span>Reformulation</span>
         </div>
       </div>

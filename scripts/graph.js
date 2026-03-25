@@ -79,11 +79,11 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
       return `link-line link-${d.type}${isAuthorLink ? ' link-author' : ''}`;
     })
     .attr('stroke', d => {
-      if (d.type === 'opposition') return '#A32D2D';
-      if (d.type === 'reformulation') return '#4A90D9';
+      if (d.type === 'opposition') return 'var(--link-opposition)';
+      if (d.type === 'reformulation') return 'var(--link-reformulation)';
       return 'var(--link-filiation)';
     })
-    .attr('stroke-width', d => d.type === 'opposition' ? 1 : 0.7)
+    .attr('stroke-width', d => d.type === 'opposition' ? 1.8 : 1.2)
     .attr('stroke-dasharray', d => {
       if (d.type === 'opposition') return '4,3';
       if (d.type === 'reformulation') return '8,4';
@@ -225,6 +225,7 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
     nodeMap,
     simulation,
     svg,
-    g
+    g,
+    zoom
   };
 }

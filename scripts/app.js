@@ -62,6 +62,22 @@ import { initPanel, openPanel, closePanel } from './panel.js';
     closePanel();
   }
 
+  // ---------- Zoom controls ----------
+  const svgEl = graph.svg;
+  const zoomBehavior = graph.zoom;
+
+  document.getElementById('zoom-in').addEventListener('click', () => {
+    svgEl.transition().duration(300).call(zoomBehavior.scaleBy, 1.4);
+  });
+
+  document.getElementById('zoom-out').addEventListener('click', () => {
+    svgEl.transition().duration(300).call(zoomBehavior.scaleBy, 0.7);
+  });
+
+  document.getElementById('zoom-reset').addEventListener('click', () => {
+    svgEl.transition().duration(500).call(zoomBehavior.transform, d3.zoomIdentity);
+  });
+
   // ---------- Toggle authors ----------
   const toggleAuthorsBtn = document.getElementById('toggle-authors');
   let authorsVisible = true;

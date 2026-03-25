@@ -14,8 +14,11 @@
   --text-secondary: #9299a8;
   --text-muted: #5e6577;
   --border: #2a2d3a;
-  --link-filiation: #555;
+  --link-filiation: rgba(255, 255, 255, 0.5);
+  --link-opposition: #e8c840;
+  --link-reformulation: #90c0ff;
   --node-glow: rgba(255, 255, 255, 0.06);
+  --header-bg: rgba(14, 75, 60, 0.55);
   --overlay-bg: rgba(15, 17, 23, 0.85);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
   --tooltip-bg: #1e2030;
@@ -33,7 +36,10 @@
   --text-muted: #aeaeb2;
   --border: #d2d2d7;
   --link-filiation: #aaa;
+  --link-opposition: #A32D2D;
+  --link-reformulation: #4A90D9;
   --node-glow: rgba(0, 0, 0, 0.04);
+  --header-bg: rgba(200, 230, 224, 0.75);
   --overlay-bg: rgba(245, 245, 247, 0.85);
   --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
   --tooltip-bg: #ffffff;
@@ -52,7 +58,10 @@
     --text-muted: #aeaeb2;
     --border: #d2d2d7;
     --link-filiation: #aaa;
+    --link-opposition: #A32D2D;
+    --link-reformulation: #4A90D9;
     --node-glow: rgba(0, 0, 0, 0.04);
+    --header-bg: rgba(200, 230, 224, 0.75);
     --overlay-bg: rgba(245, 245, 247, 0.85);
     --shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
     --tooltip-bg: #ffffff;
@@ -82,7 +91,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   padding: 12px 24px;
-  background: var(--overlay-bg);
+  background: var(--header-bg);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border);
@@ -135,6 +144,41 @@ html, body {
 .icon-sun { display: none; }
 .light-mode .icon-sun { display: block; }
 .light-mode .icon-moon { display: none; }
+
+/* ---------- Zoom controls ---------- */
+.zoom-controls {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 90;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.zoom-btn {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--overlay-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: var(--text-secondary);
+  font-size: 18px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: all 0.15s;
+  user-select: none;
+}
+
+.zoom-btn:hover {
+  color: var(--text);
+  border-color: var(--text-muted);
+}
 
 /* ---------- Graph container ---------- */
 #graph-container {
