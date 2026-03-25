@@ -109,16 +109,16 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
   // ---------- Nodes ----------
   const nodeGroup = g.append('g').attr('class', 'nodes');
 
-  const nodeElements = nodeGroup.selectAll('circle')
-    .data(nodes)
+  // Concept nodes: circles
+  const conceptNodes = nodes.filter(d => d.type === 'concept');
+  const authorNodes = nodes.filter(d => d.type === 'author');
+
+  const conceptElements = nodeGroup.selectAll('circle.node-concept')
+    .data(conceptNodes)
     .join('circle')
-    .attr('class', d => {
-      const base = `node-circle node-${d.type}`;
-      return d.type === 'author' ? `${base} node-author` : base;
-    })
+    .attr('class', 'node-circle node-concept')
     .attr('r', nodeRadius)
     .attr('fill', d => {
-      if (d.type === 'author') return 'transparent';
       const family = familyMap.get(d.family);
       return family ? family.color : '#888';
     })
@@ -126,25 +126,91 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
       const family = familyMap.get(d.family);
       return family ? family.color : '#888';
     })
-    .attr('stroke-width', d => d.type === 'author' ? 1.2 : 1.5)
-    .attr('stroke-dasharray', d => d.type === 'author' ? '2,2' : null)
-    .attr('fill-opacity', d => d.type === 'author' ? 0 : 0.8)
+    .attr('stroke-width', 1.5)
+    .attr('fill-opacity', 0.8)
     .style('cursor', 'pointer');
 
+  // Author nodes: person icon
+  const authorIconSize = 9;
+  const authorElements = nodeGroup.selectAll('g.node-author')
+    .data(authorNodes)
+    .join('g')
+    .attr('class', 'node-circle node-author')
+    .style('cursor', 'pointer');
+
+  // Person icon path (head + shoulders)
+  authorElements.append('path')
+    .attr('d', `M${-authorIconSize * 0.5},${authorIconSize * 0.45} C${-authorIconSize * 0.5},${-authorIconSize * 0.05} ${-authorIconSize * 0.25},${-authorIconSize * 0.5} 0,${-authorIconSize * 0.5} C${authorIconSize * 0.25},${-authorIconSize * 0.5} ${authorIconSize * 0.5},${-authorIconSize * 0.05} ${authorIconSize * 0.5},${authorIconSize * 0.45}`)
+    .attr('fill', 'none')
+    .attr('stroke', d => {
+      const family = familyMap.get(d.family);
+      return family ? family.color : '#888';
+    })
+    .attr('stroke-width', 1.3)
+    .attr('stroke-linecap', 'round');
+
+  authorElements.append('circle')
+    .attr('cy', -authorIconSize * 0.35)
+    .attr('r', authorIconSize * 0.22)
+    .attr('fill', 'none')
+    .attr('stroke', d => {
+      const family = familyMap.get(d.family);
+      return family ? family.color : '#888';
+    })
+    .attr('stroke-width', 1.3);
+
+  // Unified selection for all node elements
+  const nodeElements = nodeGroup.selectAll('.node-circle');
+
   // ---------- Labels ----------
+  const MAX_LABEL_WIDTH = 14; // max chars per line
   const labelGroup = g.append('g').attr('class', 'labels');
 
-  const labelElements = labelGroup.selectAll('text')
+  const labelElements = labelGroup.selectAll('g.label-wrap')
     .data(nodes)
-    .join('text')
+    .join('g')
     .attr('class', d => {
       const base = 'node-label';
       return d.type === 'author' ? `${base} label-author` : base;
-    })
-    .attr('dy', d => nodeRadius(d) + 12)
-    .attr('font-size', d => d.type === 'author' ? '9.5px' : '10.5px')
-    .attr('font-style', d => d.type === 'author' ? 'italic' : 'normal')
-    .text(d => d.label);
+    });
+
+  labelElements.each(function (d) {
+    const g = d3.select(this);
+    const lines = wrapText(d.label, MAX_LABEL_WIDTH);
+    const fontSize = d.type === 'author' ? 9.5 : 10.5;
+    const lineHeight = fontSize * 1.25;
+    const offsetY = nodeRadius(d) + 12;
+
+    lines.forEach((line, i) => {
+      g.append('text')
+        .attr('dy', offsetY + i * lineHeight)
+        .attr('font-size', `${fontSize}px`)
+        .attr('font-style', d.type === 'author' ? 'italic' : 'normal')
+        .attr('font-weight', d.type === 'author' ? '700' : 'normal')
+        .attr('fill', 'var(--text-secondary)')
+        .attr('font-family', "'Inter', system-ui, sans-serif")
+        .attr('text-anchor', 'middle')
+        .attr('pointer-events', 'none')
+        .text(line);
+    });
+  });
+
+  function wrapText(text, maxChars) {
+    if (text.length <= maxChars) return [text];
+    const words = text.split(/\s+/);
+    const lines = [];
+    let current = '';
+    for (const word of words) {
+      if (current && (current.length + 1 + word.length) > maxChars) {
+        lines.push(current);
+        current = word;
+      } else {
+        current = current ? current + ' ' + word : word;
+      }
+    }
+    if (current) lines.push(current);
+    return lines;
+  }
 
   // ---------- Interactions ----------
   nodeElements
@@ -205,13 +271,15 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
       .attr('x2', d => d.target.x)
       .attr('y2', d => d.target.y);
 
-    nodeElements
+    conceptElements
       .attr('cx', d => d.x)
       .attr('cy', d => d.y);
 
+    authorElements
+      .attr('transform', d => `translate(${d.x},${d.y})`);
+
     labelElements
-      .attr('x', d => d.x)
-      .attr('y', d => d.y);
+      .attr('transform', d => `translate(${d.x},${d.y})`);
   }
 
   // ---------- Public API ----------
