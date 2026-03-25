@@ -1,0 +1,1063 @@
+{
+  "meta": {
+    "title": "Cartographie de la philosophie de l'esprit contemporaine",
+    "subtitle": "Les grandes dimensions conceptuelles depuis le milieu du XXe siècle",
+    "version": "1.0",
+    "date": "2026-03-25",
+    "authors": ["David Lechermeier"],
+    "description": "Graphe de réseau représentant les proximités et filiations entre les principaux concepts et acteurs de la philosophie de l'esprit, organisés selon cinq familles structurantes : Matérialités, Architectures, Expériences, Sémantiques, Performations."
+  },
+
+  "families": [
+    {
+      "id": "mat",
+      "name": "Matérialités",
+      "color": "#534AB7",
+      "lightFill": "#EEEDFE",
+      "darkFill": "#3C3489",
+      "question": "De quoi les états mentaux sont-ils faits ?",
+      "description": "Axe ontologique : du physicalisme réductif au dualisme des propriétés, en passant par le fonctionnalisme, le monisme anomal, l'émergentisme et le panpsychisme. Interroge la nature métaphysique du mental et son rapport à la matière.",
+      "center": { "x": 0.17, "y": 0.22 }
+    },
+    {
+      "id": "arc",
+      "name": "Architectures",
+      "color": "#0F6E56",
+      "lightFill": "#E1F5EE",
+      "darkFill": "#085041",
+      "question": "Comment l'esprit est-il organisé ?",
+      "description": "Axe structurel : du computationnalisme symbolique aux approches 4E (embodied, embedded, extended, enactive), en passant par le connexionnisme et le traitement prédictif. Interroge les modèles d'organisation de la cognition.",
+      "center": { "x": 0.78, "y": 0.18 }
+    },
+    {
+      "id": "exp",
+      "name": "Expériences",
+      "color": "#D85A30",
+      "lightFill": "#FAECE7",
+      "darkFill": "#712B13",
+      "question": "Quel est le statut de l'expérience subjective ?",
+      "description": "Axe phénoménal : du problème difficile de Chalmers au déflationnisme dennettien, en passant par le fossé explicatif, les qualia, l'IIT et les théories de l'espace de travail global. Interroge ce qui résiste à l'explication physicaliste.",
+      "center": { "x": 0.48, "y": 0.52 }
+    },
+    {
+      "id": "sem",
+      "name": "Sémantiques",
+      "color": "#185FA5",
+      "lightFill": "#E6F1FB",
+      "darkFill": "#0C447C",
+      "question": "Comment les états mentaux acquièrent-ils leur signification ?",
+      "description": "Axe intentionnel : du langage de la pensée à l'anti-représentationnalisme, de l'internalisme à l'externalisme, de la téléosémantique au disjonctivisme. Interroge l'origine et la normativité du contenu mental.",
+      "center": { "x": 0.14, "y": 0.78 }
+    },
+    {
+      "id": "per",
+      "name": "Performations",
+      "color": "#D4537E",
+      "lightFill": "#FBEAF0",
+      "darkFill": "#72243E",
+      "question": "Comment le mental agit-il sur le monde ?",
+      "description": "Axe causal et agentif : de l'exclusion causale à l'interventionnisme, de l'épiphénoménalisme à la causalité descendante, de la chambre chinoise au neuro-existentialisme. Interroge l'efficacité causale du mental et les conditions de l'agir.",
+      "center": { "x": 0.83, "y": 0.8 }
+    }
+  ],
+
+  "nodes": [
+    {
+      "id": "behaviorisme",
+      "label": "Behaviorisme logique",
+      "family": "mat",
+      "type": "concept",
+      "weight": 6,
+      "period": "1940-1960",
+      "description": "Les états mentaux ne sont pas des entités privées mais des dispositions comportementales. Ryle dénonce le « fantôme dans la machine » comme une erreur de catégorie. Le behaviorisme dissout le problème corps-esprit par l'analyse du langage ordinaire, mais achoppe sur l'expérience subjective.",
+      "references": [
+        { "author": "Ryle, G.", "year": 1949, "title": "The Concept of Mind", "publisher": "Hutchinson" }
+      ]
+    },
+    {
+      "id": "phys_red",
+      "label": "Physicalisme réductif",
+      "family": "mat",
+      "type": "concept",
+      "weight": 7,
+      "period": "1956-1970",
+      "description": "Chaque type d'état mental est identique à un type d'état cérébral (identité type-type). La douleur serait identique à l'activation de certaines fibres C. Position ontologiquement parcimonieuse mais réfutée par l'argument de la réalisabilité multiple.",
+      "references": [
+        { "author": "Place, U.T.", "year": 1956, "title": "Is Consciousness a Brain Process?", "journal": "British Journal of Psychology", "volume": "47(1)", "pages": "44-50" },
+        { "author": "Smart, J.J.C.", "year": 1959, "title": "Sensations and Brain Processes", "journal": "Philosophical Review", "volume": "68(2)", "pages": "141-156" }
+      ]
+    },
+    {
+      "id": "fonc",
+      "label": "Fonctionnalisme",
+      "family": "mat",
+      "type": "concept",
+      "weight": 13,
+      "period": "1967-",
+      "description": "Un état mental est défini par son rôle fonctionnel : ses relations causales avec les entrées sensorielles, les sorties comportementales et les autres états mentaux, indépendamment du substrat physique. Position dominante de la fin du XXe siècle, ouvrant la voie à l'IA forte. Contestée par les arguments des qualia absents/inversés et la chambre chinoise.",
+      "references": [
+        { "author": "Putnam, H.", "year": 1967, "title": "Psychological Predicates", "in": "Art, Mind, and Religion (Capitan & Merrill, dir.)", "publisher": "University of Pittsburgh Press" },
+        { "author": "Fodor, J.", "year": 1974, "title": "Special Sciences", "journal": "Synthese", "volume": "28", "pages": "97-115" },
+        { "author": "Lewis, D.", "year": 1972, "title": "Psychophysical and Theoretical Identifications", "journal": "Australasian Journal of Philosophy", "volume": "50(3)", "pages": "249-258" },
+        { "author": "Block, N.", "year": 1978, "title": "Troubles with Functionalism", "in": "Minnesota Studies in the Philosophy of Science, 9", "pages": "261-325" }
+      ]
+    },
+    {
+      "id": "mon_an",
+      "label": "Monisme anomal",
+      "family": "mat",
+      "type": "concept",
+      "weight": 8,
+      "period": "1970-",
+      "description": "Chaque événement mental particulier est identique à un événement physique (physicalisme des tokens), mais il n'existe pas de lois psychophysiques strictes reliant types mentaux et types physiques. Préserve l'autonomie du vocabulaire intentionnel.",
+      "references": [
+        { "author": "Davidson, D.", "year": 1970, "title": "Mental Events", "in": "Experience and Theory (Foster & Swanson, dir.)", "publisher": "Clarendon Press", "pages": "79-101" }
+      ]
+    },
+    {
+      "id": "phys_nr",
+      "label": "Physicalisme non réductif",
+      "family": "mat",
+      "type": "concept",
+      "weight": 10,
+      "period": "1980-",
+      "description": "Les propriétés mentales surviennent (supervene) sur les propriétés physiques sans y être réductibles. Position la plus répandue aujourd'hui, mais soumise à la tension de l'exclusion causale : si chaque événement physique a une cause physique suffisante, quel rôle causal pour le mental ?",
+      "references": [
+        { "author": "Kim, J.", "year": 1993, "title": "Supervenience and Mind: Selected Philosophical Essays", "publisher": "Cambridge University Press" },
+        { "author": "Kim, J.", "year": 1998, "title": "Mind in a Physical World", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "panpsy",
+      "label": "Panpsychisme",
+      "family": "mat",
+      "type": "concept",
+      "weight": 11,
+      "period": "2006-",
+      "description": "L'expérience ou des proto-propriétés expérientielles sont présentes à tous les niveaux de la réalité physique. Longtemps marginal, réhabilité académiquement par Strawson, Goff et Chalmers. Fait face au problème de la combinaison : comment des micro-expériences forment-elles une expérience unifiée ?",
+      "references": [
+        { "author": "Strawson, G.", "year": 2006, "title": "Realistic Monism: Why Physicalism Entails Panpsychism", "journal": "Journal of Consciousness Studies", "volume": "13(10-11)", "pages": "3-31" },
+        { "author": "Goff, P.", "year": 2017, "title": "Consciousness and Fundamental Reality", "publisher": "Oxford University Press" },
+        { "author": "Goff, P.", "year": 2019, "title": "Galileo's Error: Foundations for a New Science of Consciousness", "publisher": "Pantheon" },
+        { "author": "Chalmers, D.J.", "year": 2015, "title": "Panpsychism and Panprotopsychism", "in": "Consciousness in the Physical World (Alter & Nagasawa, dir.)", "publisher": "Oxford University Press" },
+        { "author": "Brüntrup, G. & Jaskolla, L. (dir.)", "year": 2016, "title": "Panpsychism: Contemporary Perspectives", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "mon_ru",
+      "label": "Monisme russellien",
+      "family": "mat",
+      "type": "concept",
+      "weight": 9,
+      "period": "1927/2010-",
+      "description": "La physique ne décrit que la structure relationnelle du monde. Les propriétés phénoménales (ou proto-phénoménales) pourraient constituer la nature intrinsèque de ce qui instancie cette structure, évitant à la fois dualisme et problème de la causalité mentale.",
+      "references": [
+        { "author": "Russell, B.", "year": 1927, "title": "The Analysis of Matter", "publisher": "Kegan Paul" },
+        { "author": "Alter, T. & Nagasawa, Y. (dir.)", "year": 2015, "title": "Consciousness in the Physical World: Essays on Russellian Monism", "publisher": "Oxford University Press" },
+        { "author": "Seager, W.", "year": 2006, "title": "The 'Intrinsic Nature' Argument for Panpsychism", "journal": "Journal of Consciousness Studies", "volume": "13(10-11)", "pages": "129-145" }
+      ]
+    },
+    {
+      "id": "dual_p",
+      "label": "Dualisme des propriétés",
+      "family": "mat",
+      "type": "concept",
+      "weight": 9,
+      "period": "1996-",
+      "description": "Les propriétés phénoménales sont irréductibles aux propriétés physiques, sans postuler de substance mentale distincte. Chalmers défend un « naturalisme dualiste » : la conscience est un trait fondamental de la nature, au même titre que la masse ou la charge.",
+      "references": [
+        { "author": "Chalmers, D.J.", "year": 1996, "title": "The Conscious Mind: In Search of a Fundamental Theory", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "emerg",
+      "label": "Émergentisme",
+      "family": "mat",
+      "type": "concept",
+      "weight": 8,
+      "period": "1925/2000-",
+      "description": "Certaines propriétés de niveau supérieur possèdent un pouvoir causal irréductible à celui de leurs constituants (émergence forte). Remet en cause la clôture causale du domaine physique.",
+      "references": [
+        { "author": "Broad, C.D.", "year": 1925, "title": "The Mind and Its Place in Nature", "publisher": "Routledge & Kegan Paul" },
+        { "author": "O'Connor, T. & Wong, H.Y.", "year": 2005, "title": "The Metaphysics of Emergence", "journal": "Noûs", "volume": "39(4)", "pages": "658-678" }
+      ]
+    },
+    {
+      "id": "eliminat",
+      "label": "Éliminativisme",
+      "family": "mat",
+      "type": "concept",
+      "weight": 7,
+      "period": "1981-",
+      "description": "Notre psychologie populaire (folk psychology) — croyances, désirs, intentions — est une théorie empirique fausse qui sera à terme remplacée par un vocabulaire neuroscientifique mature, comme l'alchimie a été remplacée par la chimie.",
+      "references": [
+        { "author": "Churchland, P.M.", "year": 1981, "title": "Eliminative Materialism and the Propositional Attitudes", "journal": "Journal of Philosophy", "volume": "78(2)", "pages": "67-90" },
+        { "author": "Churchland, P.S.", "year": 1986, "title": "Neurophilosophy", "publisher": "MIT Press" }
+      ]
+    },
+
+    {
+      "id": "a_kim",
+      "label": "Kim",
+      "family": "mat",
+      "type": "author",
+      "weight": 5,
+      "description": "Survenance, exclusion causale, réductionnisme fonctionnel. Figure centrale du débat sur la causalité mentale.",
+      "references": [
+        { "author": "Kim, J.", "year": 1993, "title": "Supervenience and Mind", "publisher": "Cambridge University Press" },
+        { "author": "Kim, J.", "year": 1998, "title": "Mind in a Physical World", "publisher": "MIT Press" },
+        { "author": "Kim, J.", "year": 2005, "title": "Physicalism, or Something Near Enough", "publisher": "Princeton University Press" }
+      ]
+    },
+    {
+      "id": "a_davidson",
+      "label": "Davidson",
+      "family": "mat",
+      "type": "author",
+      "weight": 5,
+      "description": "Monisme anomal, interprétation radicale, événements mentaux.",
+      "references": [
+        { "author": "Davidson, D.", "year": 1970, "title": "Mental Events", "in": "Experience and Theory" },
+        { "author": "Davidson, D.", "year": 1984, "title": "Inquiries into Truth and Interpretation", "publisher": "Clarendon Press" }
+      ]
+    },
+    {
+      "id": "a_putnam",
+      "label": "Putnam",
+      "family": "mat",
+      "type": "author",
+      "weight": 5,
+      "description": "Fonctionnalisme, réalisabilité multiple, externalisme sémantique. Pont entre ontologie du mental et sémantique.",
+      "references": [
+        { "author": "Putnam, H.", "year": 1967, "title": "Psychological Predicates", "in": "Art, Mind, and Religion" },
+        { "author": "Putnam, H.", "year": 1975, "title": "The Meaning of 'Meaning'", "journal": "Minnesota Studies in the Philosophy of Science", "volume": "7", "pages": "131-193" }
+      ]
+    },
+    {
+      "id": "a_goff",
+      "label": "Goff",
+      "family": "mat",
+      "type": "author",
+      "weight": 4,
+      "description": "Défenseur contemporain du panpsychisme, vulgarisateur influent.",
+      "references": [
+        { "author": "Goff, P.", "year": 2017, "title": "Consciousness and Fundamental Reality", "publisher": "Oxford University Press" },
+        { "author": "Goff, P.", "year": 2019, "title": "Galileo's Error", "publisher": "Pantheon" }
+      ]
+    },
+
+    {
+      "id": "comp",
+      "label": "Computationnalisme",
+      "family": "arc",
+      "type": "concept",
+      "weight": 11,
+      "period": "1960-",
+      "description": "L'esprit comme système de traitement symbolique de l'information. Les états mentaux sont des représentations internes dotées d'une syntaxe et d'une sémantique, manipulées par des processus computationnels. Paradigme fondateur des sciences cognitives classiques.",
+      "references": [
+        { "author": "Fodor, J.", "year": 1975, "title": "The Language of Thought", "publisher": "Harvard University Press" },
+        { "author": "Pylyshyn, Z.", "year": 1984, "title": "Computation and Cognition", "publisher": "MIT Press" },
+        { "author": "Marr, D.", "year": 1982, "title": "Vision", "publisher": "W.H. Freeman" }
+      ]
+    },
+    {
+      "id": "conn",
+      "label": "Connexionnisme",
+      "family": "arc",
+      "type": "concept",
+      "weight": 7,
+      "period": "1986-",
+      "description": "Remplacement des symboles discrets par des réseaux de neurones artificiels à traitement distribué parallèle. Première inflexion du paradigme computationnel, sans nécessairement abandonner le cadre représentationnel.",
+      "references": [
+        { "author": "Rumelhart, D.E. & McClelland, J.L.", "year": 1986, "title": "Parallel Distributed Processing", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "embod",
+      "label": "Cognition incarnée",
+      "family": "arc",
+      "type": "concept",
+      "weight": 10,
+      "period": "1991-",
+      "description": "Le corps n'est pas un simple véhicule de l'esprit mais un constituant de la cognition. La morphologie corporelle, les capacités motrices et les interactions sensorimotrices façonnent les processus cognitifs. Racines dans la phénoménologie de Merleau-Ponty.",
+      "references": [
+        { "author": "Lakoff, G. & Johnson, M.", "year": 1999, "title": "Philosophy in the Flesh", "publisher": "Basic Books" },
+        { "author": "Shapiro, L.", "year": 2011, "title": "Embodied Cognition", "publisher": "Routledge" },
+        { "author": "Barsalou, L.", "year": 1999, "title": "Perceptual Symbol Systems", "journal": "Behavioral and Brain Sciences", "volume": "22(4)", "pages": "577-660" },
+        { "author": "Merleau-Ponty, M.", "year": 1945, "title": "Phénoménologie de la perception", "publisher": "Gallimard" }
+      ]
+    },
+    {
+      "id": "embed",
+      "label": "Cognition située",
+      "family": "arc",
+      "type": "concept",
+      "weight": 7,
+      "period": "1979-",
+      "description": "La cognition n'est pas un événement isolé mais co-déterminée par la niche écologique de l'agent : structures physiques, sociales et culturelles. Héritage de la psychologie écologique de Gibson et de la notion d'affordance.",
+      "references": [
+        { "author": "Gibson, J.J.", "year": 1979, "title": "The Ecological Approach to Visual Perception", "publisher": "Houghton Mifflin" }
+      ]
+    },
+    {
+      "id": "ext",
+      "label": "Esprit étendu",
+      "family": "arc",
+      "type": "concept",
+      "weight": 10,
+      "period": "1998-",
+      "description": "Les processus cognitifs ne sont pas confinés au cerveau mais s'étendent dans l'environnement. L'expérience de pensée d'Otto (patient Alzheimer et son carnet) montre qu'un support externe peut jouer le même rôle fonctionnel que la mémoire interne.",
+      "references": [
+        { "author": "Clark, A. & Chalmers, D.", "year": 1998, "title": "The Extended Mind", "journal": "Analysis", "volume": "58(1)", "pages": "7-19" },
+        { "author": "Sutton, J.", "year": 2010, "title": "Exograms and Interdisciplinarity", "in": "The Extended Mind (Menary, dir.)", "publisher": "MIT Press" },
+        { "author": "Kirchhoff, M. & Kiverstein, J.", "year": 2019, "title": "Extended Consciousness and Predictive Processing", "publisher": "Routledge" },
+        { "author": "Adams, F. & Aizawa, K.", "year": 2001, "title": "The Bounds of Cognition", "journal": "Philosophical Psychology", "volume": "14(1)", "pages": "43-64" }
+      ]
+    },
+    {
+      "id": "enact",
+      "label": "Énactivisme",
+      "family": "arc",
+      "type": "concept",
+      "weight": 12,
+      "period": "1991-",
+      "description": "La cognition n'est pas traitement de représentations préalables mais enaction d'un monde signifiant par le couplage actif organisme-environnement. Position la plus radicale du spectre 4E, avec des variantes autopoïétique, sensorimotrice et radicale.",
+      "references": [
+        { "author": "Varela, F., Thompson, E. & Rosch, E.", "year": 1991, "title": "The Embodied Mind: Cognitive Science and Human Experience", "publisher": "MIT Press" },
+        { "author": "Gallagher, S.", "year": 2017, "title": "Enactivist Interventions: Rethinking the Mind", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "enact_auto",
+      "label": "Énactivisme autopoïétique",
+      "family": "arc",
+      "type": "concept",
+      "weight": 9,
+      "period": "2007-",
+      "description": "Ancre la cognition dans les propriétés auto-organisatrices du vivant. Enraciné dans la cybernétique de second ordre et la théorie de l'autopoïèse de Maturana et Varela. Seule variante 4E constituant une rupture complète avec le cognitivisme classique.",
+      "references": [
+        { "author": "Thompson, E.", "year": 2007, "title": "Mind in Life: Biology, Phenomenology, and the Sciences of Mind", "publisher": "Harvard University Press" },
+        { "author": "Di Paolo, E., Buhrmann, T. & Barandiaran, X.", "year": 2017, "title": "Sensorimotor Life: An Enactive Proposal", "publisher": "Oxford University Press" },
+        { "author": "Maturana, H. & Varela, F.", "year": 1980, "title": "Autopoiesis and Cognition: The Realization of the Living", "publisher": "D. Reidel" }
+      ]
+    },
+    {
+      "id": "enact_sm",
+      "label": "Énactivisme sensorimoteur",
+      "family": "arc",
+      "type": "concept",
+      "weight": 7,
+      "period": "2001-",
+      "description": "La perception n'est pas une reconstruction interne du monde mais une exploration active qui établit des dépendances sensorimotrices entre mouvements, états sensoriels et monde.",
+      "references": [
+        { "author": "O'Regan, K. & Noë, A.", "year": 2001, "title": "A Sensorimotor Account of Vision and Visual Consciousness", "journal": "Behavioral and Brain Sciences", "volume": "24(5)", "pages": "939-973" },
+        { "author": "Noë, A.", "year": 2004, "title": "Action in Perception", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "enact_rad",
+      "label": "Énactivisme radical",
+      "family": "arc",
+      "type": "concept",
+      "weight": 7,
+      "period": "2013-",
+      "description": "Élimine la notion même de contenu représentationnel de l'explication cognitive. La cognition de base opère sans contenu sémantique ; seules les formes linguistiquement façonnées de cognition sont contentful.",
+      "references": [
+        { "author": "Hutto, D. & Myin, E.", "year": 2013, "title": "Radicalizing Enactivism: Basic Minds without Content", "publisher": "MIT Press" },
+        { "author": "Chemero, A.", "year": 2009, "title": "Radical Embodied Cognitive Science", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "pp",
+      "label": "Traitement prédictif",
+      "family": "arc",
+      "type": "concept",
+      "weight": 10,
+      "period": "2010-",
+      "description": "Le cerveau est fondamentalement une machine à prédictions minimisant l'erreur de prédiction par inférence bayésienne hiérarchique. Position-charnière entre computationnalisme (réélaboré en cadre probabiliste) et enactivisme. Le principe de l'énergie libre de Friston en constitue la formalisation la plus ambitieuse.",
+      "references": [
+        { "author": "Clark, A.", "year": 2013, "title": "Whatever Next? Predictive Brains, Situated Agents, and the Future of Cognitive Science", "journal": "Behavioral and Brain Sciences", "volume": "36(3)", "pages": "181-204" },
+        { "author": "Clark, A.", "year": 2016, "title": "Surfing Uncertainty: Prediction, Action, and the Embodied Mind", "publisher": "Oxford University Press" },
+        { "author": "Hohwy, J.", "year": 2013, "title": "The Predictive Mind", "publisher": "Oxford University Press" },
+        { "author": "Friston, K.", "year": 2010, "title": "The Free-Energy Principle: A Unified Brain Theory?", "journal": "Nature Reviews Neuroscience", "volume": "11(2)", "pages": "127-138" }
+      ]
+    },
+    {
+      "id": "eco_psy",
+      "label": "Psychologie écologique",
+      "family": "arc",
+      "type": "concept",
+      "weight": 6,
+      "period": "1979-",
+      "description": "Perception directe sans représentations intermédiaires. L'information est disponible dans le flux optique ambiant ; l'organisme la « cueille » (pick up) directement. Concept central d'affordance : ce que l'environnement offre à l'action.",
+      "references": [
+        { "author": "Gibson, J.J.", "year": 1979, "title": "The Ecological Approach to Visual Perception", "publisher": "Houghton Mifflin" }
+      ]
+    },
+
+    {
+      "id": "a_clark",
+      "label": "Clark",
+      "family": "arc",
+      "type": "author",
+      "weight": 5,
+      "description": "Esprit étendu, traitement prédictif, naturalisme libéral. Pont entre cognitivisme et 4E.",
+      "references": [
+        { "author": "Clark, A. & Chalmers, D.", "year": 1998, "title": "The Extended Mind", "journal": "Analysis", "volume": "58(1)" },
+        { "author": "Clark, A.", "year": 2013, "title": "Whatever Next?", "journal": "BBS", "volume": "36(3)" },
+        { "author": "Clark, A.", "year": 2016, "title": "Surfing Uncertainty", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "a_varela",
+      "label": "Varela",
+      "family": "arc",
+      "type": "author",
+      "weight": 5,
+      "description": "Enactivisme, autopoïèse (avec Maturana), neurophénoménologie. Figure fondatrice du programme 4E.",
+      "references": [
+        { "author": "Varela, F., Thompson, E. & Rosch, E.", "year": 1991, "title": "The Embodied Mind", "publisher": "MIT Press" },
+        { "author": "Maturana, H. & Varela, F.", "year": 1980, "title": "Autopoiesis and Cognition", "publisher": "D. Reidel" }
+      ]
+    },
+    {
+      "id": "a_gallagher",
+      "label": "Gallagher",
+      "family": "arc",
+      "type": "author",
+      "weight": 4,
+      "description": "Synthèse enactiviste, cognition sociale incarnée, intégration 4E et predictive processing.",
+      "references": [
+        { "author": "Gallagher, S.", "year": 2017, "title": "Enactivist Interventions", "publisher": "Oxford University Press" },
+        { "author": "Gallagher, S.", "year": 2024, "title": "Embodied and Enactive Approaches to Cognition", "publisher": "Cambridge Elements" }
+      ]
+    },
+    {
+      "id": "a_friston",
+      "label": "Friston",
+      "family": "arc",
+      "type": "author",
+      "weight": 4,
+      "description": "Principe de l'énergie libre, inférence active. Neuroscientifique dont le cadre formel a profondément influencé la philosophie de l'esprit.",
+      "references": [
+        { "author": "Friston, K.", "year": 2010, "title": "The Free-Energy Principle", "journal": "Nature Reviews Neuroscience", "volume": "11(2)" }
+      ]
+    },
+
+    {
+      "id": "hp",
+      "label": "Problème difficile",
+      "family": "exp",
+      "type": "concept",
+      "weight": 14,
+      "period": "1995-",
+      "description": "Pourquoi le traitement de l'information s'accompagne-t-il d'une expérience subjective ? Pourquoi ces processus ne se déroulent-ils pas « dans le noir » ? Distinction canonique entre problèmes « faciles » (mécanismes fonctionnels) et problème « difficile » (existence même de l'expérience). Nœud le plus connecté de la carte.",
+      "references": [
+        { "author": "Chalmers, D.J.", "year": 1995, "title": "Facing Up to the Problem of Consciousness", "journal": "Journal of Consciousness Studies", "volume": "2(3)", "pages": "200-219" },
+        { "author": "Chalmers, D.J.", "year": 1996, "title": "The Conscious Mind: In Search of a Fundamental Theory", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "gap",
+      "label": "Fossé explicatif",
+      "family": "exp",
+      "type": "concept",
+      "weight": 9,
+      "period": "1983-",
+      "description": "Une description physique complète d'un état cérébral laisse inexpliqué pourquoi cet état est associé à telle expérience phénoménale. Levine précise que ce fossé est épistémologique ; Chalmers le radicalise en fossé ontologique.",
+      "references": [
+        { "author": "Levine, J.", "year": 1983, "title": "Materialism and Qualia: The Explanatory Gap", "journal": "Pacific Philosophical Quarterly", "volume": "64", "pages": "354-361" },
+        { "author": "Levine, J.", "year": 2001, "title": "Purple Haze: The Puzzle of Conscious Experience", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "qualia",
+      "label": "Qualia",
+      "family": "exp",
+      "type": "concept",
+      "weight": 11,
+      "period": "1974-",
+      "description": "Les propriétés qualitatives de l'expérience — ce que ça fait de voir du rouge, de ressentir une douleur. Supposées privées, ineffables, intrinsèques et directement accessibles. Leur existence même est contestée par Dennett.",
+      "references": [
+        { "author": "Nagel, T.", "year": 1974, "title": "What Is It Like to Be a Bat?", "journal": "Philosophical Review", "volume": "83(4)", "pages": "435-450" },
+        { "author": "Jackson, F.", "year": 1982, "title": "Epiphenomenal Qualia", "journal": "Philosophical Quarterly", "volume": "32", "pages": "127-136" },
+        { "author": "Dennett, D.C.", "year": 1988, "title": "Quining Qualia", "in": "Consciousness in Contemporary Science (Marcel & Bisiach, dir.)", "publisher": "Oxford University Press", "pages": "42-77" }
+      ]
+    },
+    {
+      "id": "zombie",
+      "label": "Zombies philosophiques",
+      "family": "exp",
+      "type": "concept",
+      "weight": 6,
+      "period": "1996-",
+      "description": "Un monde physiquement identique au nôtre mais dépourvu de conscience est concevable. Si concevable, alors métaphysiquement possible, ce qui réfuterait le physicalisme. Argument modal central du problème difficile.",
+      "references": [
+        { "author": "Chalmers, D.J.", "year": 1996, "title": "The Conscious Mind", "publisher": "Oxford University Press" },
+        { "author": "Kripke, S.", "year": 1972, "title": "Naming and Necessity", "publisher": "Harvard University Press" }
+      ]
+    },
+    {
+      "id": "mary",
+      "label": "Argument de Mary",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1982-",
+      "description": "Mary, neuroscientifique connaissant tous les faits physiques sur la couleur, apprend quelque chose de nouveau en voyant du rouge pour la première fois. Les faits phénoménaux excèdent les faits physiques. Jackson a ultérieurement rétracté l'argument.",
+      "references": [
+        { "author": "Jackson, F.", "year": 1982, "title": "Epiphenomenal Qualia", "journal": "Philosophical Quarterly", "volume": "32", "pages": "127-136" },
+        { "author": "Jackson, F.", "year": 1998, "title": "Postscript on Qualia", "in": "Mind, Method, and Conditionals", "publisher": "Routledge" }
+      ]
+    },
+    {
+      "id": "bat",
+      "label": "Argument de la chauve-souris",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1974",
+      "description": "Le caractère subjectif de l'expérience (« ce que ça fait d'être une chauve-souris ») échappe par principe à toute description objective. Même une connaissance complète du système nerveux du chiroptère ne nous donnerait pas accès à son expérience.",
+      "references": [
+        { "author": "Nagel, T.", "year": 1974, "title": "What Is It Like to Be a Bat?", "journal": "Philosophical Review", "volume": "83(4)", "pages": "435-450" }
+      ]
+    },
+    {
+      "id": "hetpheno",
+      "label": "Hétérophénoménologie",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1991-",
+      "description": "Méthode d'étude de la conscience en troisième personne. Prend au sérieux les rapports subjectifs comme données sans en accepter la validité métaphysique. Ni béhavioriste (ne réduit pas aux comportements) ni cartésienne (n'accorde pas d'autorité infaillible au sujet).",
+      "references": [
+        { "author": "Dennett, D.C.", "year": 1991, "title": "Consciousness Explained", "publisher": "Little, Brown" },
+        { "author": "Dennett, D.C.", "year": 2005, "title": "Sweet Dreams: Philosophical Obstacles to a Science of Consciousness", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "md",
+      "label": "Ébauches multiples",
+      "family": "exp",
+      "type": "concept",
+      "weight": 9,
+      "period": "1991",
+      "description": "La conscience n'est pas un théâtre intérieur (théâtre cartésien) mais un processus distribué de révisions narratives multiples et parallèles. Il n'y a pas de point privilégié où « tout se rassemble ». Modèle fondateur du déflationnisme sur la conscience.",
+      "references": [
+        { "author": "Dennett, D.C.", "year": 1991, "title": "Consciousness Explained", "publisher": "Little, Brown" }
+      ]
+    },
+    {
+      "id": "myst",
+      "label": "Mystérianisme",
+      "family": "exp",
+      "type": "concept",
+      "weight": 6,
+      "period": "1989-",
+      "description": "Le problème conscience-matière est réel mais constitutivement insoluble pour nos capacités cognitives. Nous sommes cognitivement clos à sa solution, comme le rat l'est au calcul différentiel. La solution est peut-être simple, mais inaccessible à notre architecture cognitive.",
+      "references": [
+        { "author": "McGinn, C.", "year": 1989, "title": "Can We Solve the Mind-Body Problem?", "journal": "Mind", "volume": "98(391)", "pages": "349-366" }
+      ]
+    },
+    {
+      "id": "iit",
+      "label": "Information intégrée (IIT)",
+      "family": "exp",
+      "type": "concept",
+      "weight": 10,
+      "period": "2004-",
+      "description": "La conscience est identique à l'information intégrée irréductible d'un système (Φ). Part de cinq axiomes phénoménologiques pour dériver des postulats sur le substrat physique. Implique une forme de panpsychisme émergent. Objet de critiques substantielles (Aaronson, Bayne, Tegmark).",
+      "references": [
+        { "author": "Tononi, G.", "year": 2004, "title": "An Information Integration Theory of Consciousness", "journal": "BMC Neuroscience", "volume": "5", "pages": "42" },
+        { "author": "Tononi, G. & Koch, C.", "year": 2015, "title": "Consciousness: Here, There and Everywhere?", "journal": "Philosophical Transactions of the Royal Society B", "volume": "370(1668)" },
+        { "author": "Mørch, H.H.", "year": 2018, "title": "Is the Integrated Information Theory of Consciousness Compatible with Russellian Panpsychism?", "journal": "Erkenntnis", "volume": "84(5)", "pages": "1065-1085" }
+      ]
+    },
+    {
+      "id": "pcs",
+      "label": "Concepts phénoménaux",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1997-",
+      "description": "Stratégie physicaliste : le fossé explicatif s'explique par la structure particulière de nos concepts phénoménaux (quotationnels, auto-référentiels), non par une lacune ontologique. L'identité physique-mental est vraie mais non connaissable a priori.",
+      "references": [
+        { "author": "Loar, B.", "year": 1997, "title": "Phenomenal States", "in": "The Nature of Consciousness (Block, Flanagan & Güzeldere, dir.)", "publisher": "MIT Press" },
+        { "author": "Papineau, D.", "year": 2002, "title": "Thinking about Consciousness", "publisher": "Oxford University Press" },
+        { "author": "Chalmers, D.J.", "year": 2007, "title": "Phenomenal Concepts and the Explanatory Gap", "in": "Phenomenal Knowledge and Phenomenal Concepts (Alter & Walter, dir.)", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "gwt",
+      "label": "Espace de travail global",
+      "family": "exp",
+      "type": "concept",
+      "weight": 8,
+      "period": "1988-",
+      "description": "La conscience naît de la diffusion d'information dans un espace de travail neuronal global, rendant cette information disponible à de multiples processus spécialisés. Théorie empiriquement féconde, principalement développée en neurosciences.",
+      "references": [
+        { "author": "Baars, B.J.", "year": 1988, "title": "A Cognitive Theory of Consciousness", "publisher": "Cambridge University Press" },
+        { "author": "Dehaene, S. & Naccache, L.", "year": 2001, "title": "Towards a Cognitive Neuroscience of Consciousness", "journal": "Cognition", "volume": "79(1-2)", "pages": "1-37" }
+      ]
+    },
+    {
+      "id": "hot",
+      "label": "Théories d'ordre supérieur",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "2005-",
+      "description": "Un état mental est conscient si et seulement s'il est l'objet d'une représentation d'ordre supérieur (une pensée ou une perception portant sur cet état). La conscience est représentation de représentation.",
+      "references": [
+        { "author": "Rosenthal, D.", "year": 2005, "title": "Consciousness and Mind", "publisher": "Oxford University Press" },
+        { "author": "Lau, H. & Rosenthal, D.", "year": 2011, "title": "Empirical Support for Higher-Order Theories of Conscious Awareness", "journal": "Trends in Cognitive Sciences", "volume": "15(8)", "pages": "365-373" }
+      ]
+    },
+
+    {
+      "id": "a_chalmers",
+      "label": "Chalmers",
+      "family": "exp",
+      "type": "author",
+      "weight": 6,
+      "description": "Problème difficile, naturalisme dualiste, panprotopsychisme, esprit étendu. Figure structurante du champ — son hard problem polarise l'ensemble des positions.",
+      "references": [
+        { "author": "Chalmers, D.J.", "year": 1995, "title": "Facing Up to the Problem of Consciousness", "journal": "JCS", "volume": "2(3)" },
+        { "author": "Chalmers, D.J.", "year": 1996, "title": "The Conscious Mind", "publisher": "Oxford University Press" },
+        { "author": "Chalmers, D.J.", "year": 2007, "title": "Phenomenal Concepts and the Explanatory Gap", "in": "Phenomenal Knowledge and Phenomenal Concepts" },
+        { "author": "Chalmers, D.J.", "year": 2015, "title": "Panpsychism and Panprotopsychism", "in": "Consciousness in the Physical World" }
+      ]
+    },
+    {
+      "id": "a_dennett",
+      "label": "Dennett",
+      "family": "exp",
+      "type": "author",
+      "weight": 6,
+      "description": "Ébauches multiples, Quining Qualia, hétérophénoménologie. Anti-pôle de Chalmers — nie la réalité du problème difficile et des qualia. Influence considérable sur le naturalisme philosophique.",
+      "references": [
+        { "author": "Dennett, D.C.", "year": 1988, "title": "Quining Qualia", "in": "Consciousness in Contemporary Science" },
+        { "author": "Dennett, D.C.", "year": 1991, "title": "Consciousness Explained", "publisher": "Little, Brown" },
+        { "author": "Dennett, D.C.", "year": 2005, "title": "Sweet Dreams", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "a_nagel",
+      "label": "Nagel",
+      "family": "exp",
+      "type": "author",
+      "weight": 5,
+      "description": "Subjectivité irréductible (chauve-souris), Mind and Cosmos. Défend l'irréductibilité de la conscience depuis les années 1970.",
+      "references": [
+        { "author": "Nagel, T.", "year": 1974, "title": "What Is It Like to Be a Bat?", "journal": "Philosophical Review", "volume": "83(4)" },
+        { "author": "Nagel, T.", "year": 2012, "title": "Mind and Cosmos", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "a_tononi",
+      "label": "Tononi",
+      "family": "exp",
+      "type": "author",
+      "weight": 4,
+      "description": "Créateur de l'IIT, mesure Φ, axiomes phénoménologiques. Neuroscientifique dont la théorie a des implications philosophiques majeures.",
+      "references": [
+        { "author": "Tononi, G.", "year": 2004, "title": "An Information Integration Theory of Consciousness", "journal": "BMC Neuroscience", "volume": "5" },
+        { "author": "Tononi, G. & Koch, C.", "year": 2015, "title": "Consciousness: Here, There and Everywhere?", "journal": "Phil. Trans. R. Soc. B", "volume": "370(1668)" }
+      ]
+    },
+    {
+      "id": "a_jackson",
+      "label": "Jackson",
+      "family": "exp",
+      "type": "author",
+      "weight": 4,
+      "description": "Argument de la connaissance (Mary). A ultérieurement rétracté sa position anti-physicaliste — cas remarquable d'auto-réfutation philosophique.",
+      "references": [
+        { "author": "Jackson, F.", "year": 1982, "title": "Epiphenomenal Qualia", "journal": "Philosophical Quarterly", "volume": "32" },
+        { "author": "Jackson, F.", "year": 1998, "title": "Postscript on Qualia", "in": "Mind, Method, and Conditionals" }
+      ]
+    },
+    {
+      "id": "a_levine",
+      "label": "Levine",
+      "family": "exp",
+      "type": "author",
+      "weight": 4,
+      "description": "Fossé explicatif, Purple Haze. Maintient que le fossé est épistémologique, non ontologique — position intermédiaire entre physicalisme et dualisme.",
+      "references": [
+        { "author": "Levine, J.", "year": 1983, "title": "Materialism and Qualia: The Explanatory Gap", "journal": "Pacific Philosophical Quarterly", "volume": "64" },
+        { "author": "Levine, J.", "year": 2001, "title": "Purple Haze", "publisher": "MIT Press" }
+      ]
+    },
+
+    {
+      "id": "lot",
+      "label": "Langage de la pensée",
+      "family": "sem",
+      "type": "concept",
+      "weight": 10,
+      "period": "1975-",
+      "description": "Penser, c'est manipuler des représentations symboliques (mentalais) dotées d'une syntaxe combinatoire et d'une sémantique compositionnelle. Le contenu est fixé par des relations causales-informationnelles avec le monde.",
+      "references": [
+        { "author": "Fodor, J.", "year": 1975, "title": "The Language of Thought", "publisher": "Harvard University Press" },
+        { "author": "Fodor, J.", "year": 1987, "title": "Psychosemantics", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "extern",
+      "label": "Externalisme",
+      "family": "sem",
+      "type": "concept",
+      "weight": 10,
+      "period": "1975-",
+      "description": "Le contenu des états mentaux dépend en partie de l'environnement naturel et social du sujet. Deux sujets physiquement identiques dans des environnements différents (Terre vs Terre Jumelle) auraient des contenus mentaux différents.",
+      "references": [
+        { "author": "Putnam, H.", "year": 1975, "title": "The Meaning of 'Meaning'", "journal": "Minnesota Studies in the Philosophy of Science", "volume": "7", "pages": "131-193" },
+        { "author": "Burge, T.", "year": 1979, "title": "Individualism and the Mental", "journal": "Midwest Studies in Philosophy", "volume": "4(1)", "pages": "73-121" }
+      ]
+    },
+    {
+      "id": "intern",
+      "label": "Internalisme",
+      "family": "sem",
+      "type": "concept",
+      "weight": 7,
+      "period": "1975-",
+      "description": "Le contenu mental (narrow content) est déterminé entièrement par les états internes du sujet, indépendamment du contexte. Position liée au computationnalisme : la machine opère sur des symboles internes.",
+      "references": [
+        { "author": "Fodor, J.", "year": 1987, "title": "Psychosemantics", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "teleo",
+      "label": "Téléosémantique",
+      "family": "sem",
+      "type": "concept",
+      "weight": 8,
+      "period": "1984-",
+      "description": "La normativité du contenu mental s'explique par les fonctions biologiques. Un état mental représente X parce que sa fonction propre (sélectionnée par l'évolution) est de co-varier avec X. Résout le problème de la disjonction.",
+      "references": [
+        { "author": "Millikan, R.G.", "year": 1984, "title": "Language, Thought, and Other Biological Categories", "publisher": "MIT Press" },
+        { "author": "Papineau, D.", "year": 1993, "title": "Philosophical Naturalism", "publisher": "Blackwell" }
+      ]
+    },
+    {
+      "id": "anti_rep",
+      "label": "Anti-représentationnalisme",
+      "family": "sem",
+      "type": "concept",
+      "weight": 8,
+      "period": "2009-",
+      "description": "La cognition de base opère sans contenu représentationnel. Les explications représentationnelles sont inutiles (voire nuisibles) pour rendre compte de l'interaction organisme-environnement. Convergence entre énactivisme radical et psychologie écologique.",
+      "references": [
+        { "author": "Hutto, D. & Myin, E.", "year": 2013, "title": "Radicalizing Enactivism", "publisher": "MIT Press" },
+        { "author": "Chemero, A.", "year": 2009, "title": "Radical Embodied Cognitive Science", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "norm",
+      "label": "Normativité du contenu",
+      "family": "sem",
+      "type": "concept",
+      "weight": 7,
+      "period": "1982-",
+      "description": "Comment un état mental peut-il représenter correctement ou incorrectement quelque chose ? D'où vient la norme qui fixe le contenu ? La lecture de Wittgenstein par Kripke radicalise la difficulté : aucun fait passé ne détermine quelle règle un symbole encode.",
+      "references": [
+        { "author": "Kripke, S.", "year": 1982, "title": "Wittgenstein on Rules and Private Language", "publisher": "Harvard University Press" },
+        { "author": "Wittgenstein, L.", "year": 1953, "title": "Philosophical Investigations", "publisher": "Blackwell" }
+      ]
+    },
+    {
+      "id": "represent",
+      "label": "Représentationnalisme",
+      "family": "sem",
+      "type": "concept",
+      "weight": 7,
+      "period": "1995-",
+      "description": "Le caractère phénoménal de la perception est entièrement constitué par son contenu représentationnel. Deux perceptions qui représentent le monde de la même façon ont la même phénoménologie.",
+      "references": [
+        { "author": "Dretske, F.", "year": 1995, "title": "Naturalizing the Mind", "publisher": "MIT Press" },
+        { "author": "Tye, M.", "year": 1995, "title": "Ten Problems of Consciousness", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "disjoncti",
+      "label": "Disjonctivisme",
+      "family": "sem",
+      "type": "concept",
+      "weight": 6,
+      "period": "2004-",
+      "description": "La perception véridique et l'hallucination ne sont pas des états mentaux de même nature qui diffèrent seulement par leurs causes. Ce sont des états fondamentalement différents — le réalisme naïf est sauvé.",
+      "references": [
+        { "author": "Martin, M.G.F.", "year": 2004, "title": "The Limits of Self-Awareness", "journal": "Philosophical Studies", "volume": "120(1-3)" },
+        { "author": "Brewer, B.", "year": 2011, "title": "Perception and Its Objects", "publisher": "Oxford University Press" }
+      ]
+    },
+
+    {
+      "id": "a_fodor",
+      "label": "Fodor",
+      "family": "sem",
+      "type": "author",
+      "weight": 5,
+      "description": "LOT, modularité, contenu étroit, problème de la disjonction. Architecte du paradigme computationnel-représentationnel classique. Pont entre ontologie, architectures et sémantiques.",
+      "references": [
+        { "author": "Fodor, J.", "year": 1975, "title": "The Language of Thought", "publisher": "Harvard University Press" },
+        { "author": "Fodor, J.", "year": 1983, "title": "The Modularity of Mind", "publisher": "MIT Press" },
+        { "author": "Fodor, J.", "year": 1987, "title": "Psychosemantics", "publisher": "MIT Press" },
+        { "author": "Fodor, J.", "year": 1990, "title": "A Theory of Content and Other Essays", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "a_millikan",
+      "label": "Millikan",
+      "family": "sem",
+      "type": "author",
+      "weight": 4,
+      "description": "Téléosémantique, fonctions propres biologiques. Naturalise la normativité du contenu par la biologie évolutive.",
+      "references": [
+        { "author": "Millikan, R.G.", "year": 1984, "title": "Language, Thought, and Other Biological Categories", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "a_burge",
+      "label": "Burge",
+      "family": "sem",
+      "type": "author",
+      "weight": 4,
+      "description": "Externalisme social, anti-individualisme. Montre que le contenu mental dépend des pratiques linguistiques de la communauté.",
+      "references": [
+        { "author": "Burge, T.", "year": 1979, "title": "Individualism and the Mental", "journal": "Midwest Studies in Philosophy", "volume": "4(1)" },
+        { "author": "Burge, T.", "year": 1986, "title": "Individualism and Psychology", "journal": "Philosophical Review", "volume": "95(1)" }
+      ]
+    },
+
+    {
+      "id": "excl",
+      "label": "Exclusion causale",
+      "family": "per",
+      "type": "concept",
+      "weight": 10,
+      "period": "1998-",
+      "description": "Si la clôture causale du domaine physique est vraie (tout événement physique a une cause physique suffisante), les propriétés mentales sont causalement inertes — sauf à les réduire au physique. Dilemme : réductionnisme ou épiphénoménalisme.",
+      "references": [
+        { "author": "Kim, J.", "year": 1998, "title": "Mind in a Physical World", "publisher": "MIT Press" },
+        { "author": "Kim, J.", "year": 2005, "title": "Physicalism, or Something Near Enough", "publisher": "Princeton University Press" }
+      ]
+    },
+    {
+      "id": "interv",
+      "label": "Interventionnisme",
+      "family": "per",
+      "type": "concept",
+      "weight": 8,
+      "period": "2003-",
+      "description": "Reformule la causalité en termes de dépendance contrefactuelle à différents niveaux de description. Les propriétés mentales jouent un rôle causal « à leur niveau » sans entraîner de surdétermination. Compatibilisme causal.",
+      "references": [
+        { "author": "Woodward, J.", "year": 2003, "title": "Making Things Happen: A Theory of Causal Explanation", "publisher": "Oxford University Press" },
+        { "author": "List, C. & Menzies, P.", "year": 2009, "title": "Nonreductive Physicalism and the Limits of the Exclusion Principle", "journal": "Journal of Philosophy", "volume": "106(9)", "pages": "475-502" }
+      ]
+    },
+    {
+      "id": "epiph",
+      "label": "Épiphénoménalisme",
+      "family": "per",
+      "type": "concept",
+      "weight": 7,
+      "period": "1874-",
+      "description": "Les états mentaux sont des sous-produits (épiphénomènes) des processus physiques, sans pouvoir causal propre. La conscience accompagne le cerveau comme la fumée accompagne le feu, sans agir sur lui.",
+      "references": [
+        { "author": "Jackson, F.", "year": 1982, "title": "Epiphenomenal Qualia", "journal": "Philosophical Quarterly", "volume": "32" },
+        { "author": "Huxley, T.H.", "year": 1874, "title": "On the Hypothesis that Animals are Automata", "journal": "Fortnightly Review", "volume": "16", "pages": "555-580" }
+      ]
+    },
+    {
+      "id": "caus_desc",
+      "label": "Causalité descendante",
+      "family": "per",
+      "type": "concept",
+      "weight": 7,
+      "period": "1969-",
+      "description": "Les propriétés de niveau supérieur (mentales, biologiques) exercent un pouvoir causal irréductible sur leurs constituants physiques. Remet en cause la clôture causale du domaine physique.",
+      "references": [
+        { "author": "Sperry, R.W.", "year": 1969, "title": "A Modified Concept of Consciousness", "journal": "Psychological Review", "volume": "76(6)" },
+        { "author": "O'Connor, T. & Wong, H.Y.", "year": 2005, "title": "The Metaphysics of Emergence", "journal": "Noûs", "volume": "39(4)" }
+      ]
+    },
+    {
+      "id": "chambre",
+      "label": "Chambre chinoise",
+      "family": "per",
+      "type": "concept",
+      "weight": 8,
+      "period": "1980",
+      "description": "Un homme dans une pièce manipule des symboles chinois selon des règles syntaxiques sans rien comprendre au chinois. La syntaxe ne suffit pas à produire la sémantique — contre l'IA forte et le fonctionnalisme computationnel.",
+      "references": [
+        { "author": "Searle, J.", "year": 1980, "title": "Minds, Brains, and Programs", "journal": "Behavioral and Brain Sciences", "volume": "3(3)", "pages": "417-424" }
+      ]
+    },
+    {
+      "id": "neuroex",
+      "label": "Neuro-existentialisme",
+      "family": "per",
+      "type": "concept",
+      "weight": 6,
+      "period": "2018-",
+      "description": "Troisième phase de la pensée existentialiste, informée par les neurosciences. Le « problème vraiment difficile » : comment la signification subjective peut-elle émerger dans un cerveau purement matériel ?",
+      "references": [
+        { "author": "Flanagan, O. & Caruso, G. (dir.)", "year": 2018, "title": "Neuroexistentialism: Meaning, Morals, and Purpose in the Age of Neuroscience", "publisher": "Oxford University Press" }
+      ]
+    },
+    {
+      "id": "libre_arb",
+      "label": "Libre arbitre et déterminisme",
+      "family": "per",
+      "type": "concept",
+      "weight": 7,
+      "period": "1983-",
+      "description": "Les neurosciences de la décision (Libet) défient l'intuition du contrôle conscient. Le compatibilisme (Dennett) propose que la liberté émerge de la complexité causale du cerveau, sans exiger d'indéterminisme.",
+      "references": [
+        { "author": "Dennett, D.C.", "year": 1984, "title": "Elbow Room: The Varieties of Free Will Worth Wanting", "publisher": "MIT Press" },
+        { "author": "Dennett, D.C.", "year": 2003, "title": "Freedom Evolves", "publisher": "Viking" },
+        { "author": "Libet, B.", "year": 1983, "title": "Time of Conscious Intention to Act", "journal": "Brain", "volume": "106(3)" },
+        { "author": "Wegner, D.", "year": 2002, "title": "The Illusion of Conscious Will", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "agentivite",
+      "label": "Agentivité",
+      "family": "per",
+      "type": "concept",
+      "weight": 6,
+      "period": "2000-",
+      "description": "Le sens de l'agir (sense of agency) : la phénoménologie de l'action volontaire, la distinction entre actions initiées et subies, et le sentiment d'être l'auteur de ses actes.",
+      "references": [
+        { "author": "Gallagher, S.", "year": 2000, "title": "Philosophical Conceptions of the Self: Implications for Cognitive Science", "journal": "Trends in Cognitive Sciences", "volume": "4(1)" },
+        { "author": "Pacherie, E.", "year": 2008, "title": "The Phenomenology of Action: A Conceptual Framework", "journal": "Cognition", "volume": "107(1)" }
+      ]
+    },
+
+    {
+      "id": "a_searle",
+      "label": "Searle",
+      "family": "per",
+      "type": "author",
+      "weight": 5,
+      "description": "Chambre chinoise, intentionnalité collective, naturalisme biologique. Critique du computationnalisme et du fonctionnalisme.",
+      "references": [
+        { "author": "Searle, J.", "year": 1980, "title": "Minds, Brains, and Programs", "journal": "BBS", "volume": "3(3)" },
+        { "author": "Searle, J.", "year": 1992, "title": "The Rediscovery of the Mind", "publisher": "MIT Press" }
+      ]
+    },
+    {
+      "id": "a_kim2",
+      "label": "Kim",
+      "family": "per",
+      "type": "author",
+      "weight": 4,
+      "description": "Exclusion causale, réductionnisme fonctionnel. Même auteur que a_kim (Matérialités), présent ici pour sa contribution aux Performations.",
+      "references": [
+        { "author": "Kim, J.", "year": 1998, "title": "Mind in a Physical World", "publisher": "MIT Press" },
+        { "author": "Kim, J.", "year": 2005, "title": "Physicalism, or Something Near Enough", "publisher": "Princeton University Press" }
+      ]
+    }
+  ],
+
+  "links": [
+    { "source": "behaviorisme", "target": "phys_red", "type": "filiation", "description": "Le physicalisme réductif succède au behaviorisme en proposant une identité ontologique plutôt que dispositionnelle" },
+    { "source": "phys_red", "target": "fonc", "type": "filiation", "description": "Le fonctionnalisme corrige l'identité type-type par la réalisabilité multiple" },
+    { "source": "fonc", "target": "phys_nr", "type": "filiation", "description": "Le physicalisme non réductif prolonge le fonctionnalisme en acceptant la survenance sans réduction" },
+    { "source": "mon_an", "target": "phys_nr", "type": "filiation", "description": "Le monisme anomal de Davidson est une forme de physicalisme non réductif" },
+    { "source": "panpsy", "target": "mon_ru", "type": "filiation", "description": "Le monisme russellien fournit le cadre métaphysique préféré du panpsychisme contemporain" },
+    { "source": "dual_p", "target": "panpsy", "type": "reformulation", "description": "Le panpsychisme reformule l'intuition dualiste en distribuant l'expérience universellement" },
+    { "source": "emerg", "target": "phys_nr", "type": "filiation", "description": "L'émergentisme est une variante du physicalisme non réductif" },
+    { "source": "eliminat", "target": "phys_red", "type": "filiation", "description": "L'éliminativisme radicalise le réductionnisme en éliminant le vocabulaire mentaliste" },
+
+    { "source": "a_kim", "target": "phys_nr", "type": "filiation" },
+    { "source": "a_davidson", "target": "mon_an", "type": "filiation" },
+    { "source": "a_putnam", "target": "fonc", "type": "filiation" },
+    { "source": "a_goff", "target": "panpsy", "type": "filiation" },
+
+    { "source": "comp", "target": "conn", "type": "filiation", "description": "Le connexionnisme reformule le computationnalisme avec des réseaux subsymboliques" },
+    { "source": "embod", "target": "embed", "type": "filiation", "description": "La cognition incarnée implique naturellement une cognition située" },
+    { "source": "embed", "target": "ext", "type": "filiation", "description": "De la situation environnementale à l'extension constitutive de l'esprit" },
+    { "source": "enact", "target": "enact_auto", "type": "filiation", "description": "L'énactivisme autopoïétique approfondit l'enactivisme originel" },
+    { "source": "enact", "target": "enact_sm", "type": "filiation", "description": "L'énactivisme sensorimoteur se concentre sur la perception" },
+    { "source": "enact", "target": "enact_rad", "type": "filiation", "description": "L'énactivisme radical pousse l'anti-représentationnalisme à son terme" },
+    { "source": "embod", "target": "enact", "type": "filiation", "description": "L'enactivisme radicalise la cognition incarnée" },
+    { "source": "pp", "target": "enact_auto", "type": "reformulation", "description": "Le predictive processing peut être interprété dans un cadre enactiviste (Kirchhoff & Kiverstein 2019)" },
+    { "source": "comp", "target": "pp", "type": "reformulation", "description": "Le predictive processing réélabore le computationnalisme en cadre probabiliste" },
+    { "source": "eco_psy", "target": "embed", "type": "filiation", "description": "Gibson est le père de la cognition située" },
+    { "source": "eco_psy", "target": "enact_sm", "type": "filiation", "description": "L'énactivisme sensorimoteur hérite de la perception directe gibsonienne" },
+
+    { "source": "a_clark", "target": "ext", "type": "filiation" },
+    { "source": "a_clark", "target": "pp", "type": "filiation" },
+    { "source": "a_varela", "target": "enact", "type": "filiation" },
+    { "source": "a_varela", "target": "enact_auto", "type": "filiation" },
+    { "source": "a_gallagher", "target": "enact", "type": "filiation" },
+    { "source": "a_friston", "target": "pp", "type": "filiation" },
+
+    { "source": "gap", "target": "hp", "type": "filiation", "description": "Le fossé explicatif de Levine (1983) préfigure le hard problem de Chalmers (1995)" },
+    { "source": "hp", "target": "qualia", "type": "filiation", "description": "Le problème difficile est le problème de l'existence des qualia" },
+    { "source": "hp", "target": "zombie", "type": "filiation", "description": "L'argument zombie est un argument pour le hard problem" },
+    { "source": "hp", "target": "mary", "type": "filiation", "description": "L'argument de Mary est mobilisé en appui du hard problem" },
+    { "source": "hp", "target": "bat", "type": "filiation", "description": "Nagel pose le problème que Chalmers nommera hard problem" },
+    { "source": "md", "target": "hetpheno", "type": "filiation", "description": "L'hétérophénoménologie est la méthode qui accompagne les ébauches multiples" },
+    { "source": "iit", "target": "panpsy", "type": "reformulation", "description": "L'IIT implique un panpsychisme émergent (Chalmers 2016)" },
+    { "source": "pcs", "target": "gap", "type": "reformulation", "description": "La stratégie des concepts phénoménaux tente d'expliquer le fossé sans quitter le physicalisme" },
+    { "source": "gwt", "target": "hp", "type": "reformulation", "description": "Le GWT propose une approche fonctionnelle du problème de la conscience" },
+    { "source": "hot", "target": "gwt", "type": "filiation", "description": "Les théories d'ordre supérieur partagent le cadre fonctionnaliste du GWT" },
+
+    { "source": "a_chalmers", "target": "hp", "type": "filiation" },
+    { "source": "a_chalmers", "target": "dual_p", "type": "filiation" },
+    { "source": "a_chalmers", "target": "panpsy", "type": "filiation" },
+    { "source": "a_dennett", "target": "md", "type": "filiation" },
+    { "source": "a_dennett", "target": "hetpheno", "type": "filiation" },
+    { "source": "a_nagel", "target": "bat", "type": "filiation" },
+    { "source": "a_tononi", "target": "iit", "type": "filiation" },
+    { "source": "a_jackson", "target": "mary", "type": "filiation" },
+    { "source": "a_levine", "target": "gap", "type": "filiation" },
+
+    { "source": "lot", "target": "intern", "type": "filiation", "description": "Le LOT implique un contenu étroit computationnel" },
+    { "source": "extern", "target": "intern", "type": "opposition", "description": "Putnam et Burge montrent que le contenu dépasse les états internes" },
+    { "source": "teleo", "target": "norm", "type": "reformulation", "description": "La téléosémantique propose une solution biologique au problème de la normativité" },
+    { "source": "anti_rep", "target": "enact_rad", "type": "filiation", "description": "L'anti-représentationnalisme est la thèse sémantique de l'énactivisme radical" },
+    { "source": "represent", "target": "disjoncti", "type": "opposition", "description": "Le disjonctivisme s'oppose au représentationnalisme sur le statut de l'hallucination" },
+
+    { "source": "a_fodor", "target": "lot", "type": "filiation" },
+    { "source": "a_fodor", "target": "comp", "type": "filiation" },
+    { "source": "a_millikan", "target": "teleo", "type": "filiation" },
+    { "source": "a_burge", "target": "extern", "type": "filiation" },
+
+    { "source": "excl", "target": "epiph", "type": "filiation", "description": "L'exclusion causale conduit logiquement à l'épiphénoménalisme si on refuse la réduction" },
+    { "source": "interv", "target": "excl", "type": "opposition", "description": "L'interventionnisme conteste les prémisses de l'exclusion causale" },
+    { "source": "caus_desc", "target": "emerg", "type": "filiation", "description": "La causalité descendante est le mécanisme invoqué par l'émergentisme fort" },
+    { "source": "libre_arb", "target": "neuroex", "type": "filiation", "description": "Le problème du libre arbitre nourrit le questionnement neuro-existentialiste" },
+    { "source": "agentivite", "target": "enact", "type": "reformulation", "description": "L'agentivité est repensée dans le cadre enactiviste" },
+
+    { "source": "a_searle", "target": "chambre", "type": "filiation" },
+    { "source": "a_kim2", "target": "excl", "type": "filiation" },
+
+    { "source": "fonc", "target": "comp", "type": "filiation", "description": "Le computationnalisme est le fonctionnalisme réalisé dans un cadre symbolique" },
+    { "source": "fonc", "target": "chambre", "type": "opposition", "description": "Searle attaque frontalement le fonctionnalisme computationnel" },
+    { "source": "fonc", "target": "qualia", "type": "opposition", "description": "Les qualia résistent à la caractérisation fonctionnelle (Block, inverted/absent qualia)" },
+    { "source": "hp", "target": "dual_p", "type": "filiation", "description": "Chalmers tire le dualisme des propriétés du hard problem" },
+    { "source": "phys_nr", "target": "excl", "type": "filiation", "description": "Kim montre que le physicalisme NR conduit à l'exclusion causale" },
+    { "source": "comp", "target": "lot", "type": "filiation", "description": "Fodor unifie computationnalisme et langage de la pensée" },
+    { "source": "md", "target": "fonc", "type": "filiation", "description": "Les ébauches multiples de Dennett prolongent le fonctionnalisme" },
+    { "source": "iit", "target": "mon_ru", "type": "reformulation", "description": "L'IIT mathématise l'intuition du monisme russellien (Mørch 2018)" },
+    { "source": "pp", "target": "ext", "type": "reformulation", "description": "Le predictive processing offre un cadre pour penser l'extension (Kirchhoff & Kiverstein 2019)" },
+    { "source": "chambre", "target": "comp", "type": "opposition", "description": "La chambre chinoise vise le computationnalisme et l'IA forte" },
+    { "source": "panpsy", "target": "hp", "type": "reformulation", "description": "Le panpsychisme comme réponse au hard problem" },
+    { "source": "neuroex", "target": "hp", "type": "reformulation", "description": "Le neuro-existentialisme prolonge le hard problem vers la question du sens" },
+    { "source": "extern", "target": "ext", "type": "filiation", "description": "L'externalisme sémantique de Putnam préfigure l'esprit étendu de Clark" },
+    { "source": "myst", "target": "hp", "type": "filiation", "description": "McGinn accepte le problème mais nie notre capacité à le résoudre" },
+    { "source": "hetpheno", "target": "qualia", "type": "opposition", "description": "Dennett nie la réalité métaphysique des qualia" },
+    { "source": "eliminat", "target": "md", "type": "filiation", "description": "L'éliminativisme nourrit le déflationnisme dennettien" },
+    { "source": "a_dennett", "target": "eliminat", "type": "filiation" },
+    { "source": "a_putnam", "target": "extern", "type": "filiation" },
+    { "source": "a_chalmers", "target": "ext", "type": "filiation" },
+    { "source": "gwt", "target": "fonc", "type": "reformulation", "description": "L'espace de travail global reformule l'intuition fonctionnaliste" },
+    { "source": "hot", "target": "fonc", "type": "reformulation", "description": "Les théories d'ordre supérieur s'inscrivent dans le cadre fonctionnaliste" }
+  ]
+}
