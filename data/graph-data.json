@@ -2,15 +2,16 @@
   "meta": {
     "title": "Cartographie de la philosophie de l'esprit contemporaine",
     "subtitle": "Les grandes dimensions conceptuelles depuis le milieu du XXe siècle",
-    "version": "1.1",
-    "date": "2026-03-25",
+    "version": "1.2",
+    "date": "2026-03-28",
     "authors": [
       "David Lechermeier"
     ],
     "description": "Graphe de réseau représentant les proximités et filiations entre les principaux concepts et acteurs de la philosophie de l'esprit, organisés selon cinq familles structurantes : Matérialités, Architectures, Expériences, Sémantiques, Performations.",
     "changelog": [
       "v1.0 — Version initiale : 55 nœuds, ~75 liens",
-      "v1.1 — Ajout de : G. Lechermeier (Le vivant, 2019), dualisme interactionniste (Popper & Eccles), philosophie du processus (Whitehead), it from bit (Wheeler). 6 nœuds et 13 liens ajoutés."
+      "v1.1 — Ajout de : G. Lechermeier (Le vivant, 2019), dualisme interactionniste (Popper & Eccles), philosophie du processus (Whitehead), it from bit (Wheeler). 6 nœuds et 13 liens ajoutés.",
+      "v1.2 — Intégration des entrées Stanford Encyclopedia of Philosophy (sep_url) sur 35 nœuds concepts. Ajout de 3 nœuds (representation_mentale, unite_conscience, conscience_intentionnalite). Définition de 5 parcours épistémiques avec séquences, transitions et textes d'accompagnement."
     ]
   },
   "families": [
@@ -96,7 +97,8 @@
           "title": "The Concept of Mind",
           "publisher": "Hutchinson"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/behaviorism/"
     },
     {
       "id": "phys_red",
@@ -123,7 +125,8 @@
           "volume": "68(2)",
           "pages": "141-156"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/mind-identity/"
     },
     {
       "id": "fonc",
@@ -164,7 +167,8 @@
           "in": "Minnesota Studies in the Philosophy of Science, 9",
           "pages": "261-325"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/functionalism/"
     },
     {
       "id": "mon_an",
@@ -183,7 +187,8 @@
           "publisher": "Clarendon Press",
           "pages": "79-101"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/anomalous-monism/"
     },
     {
       "id": "phys_nr",
@@ -206,7 +211,8 @@
           "title": "Mind in a Physical World",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/physicalism/"
     },
     {
       "id": "panpsy",
@@ -250,7 +256,8 @@
           "title": "Panpsychism: Contemporary Perspectives",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/panpsychism/"
     },
     {
       "id": "mon_ru",
@@ -281,7 +288,8 @@
           "volume": "13(10-11)",
           "pages": "129-145"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/russellian-monism/"
     },
     {
       "id": "dual_p",
@@ -298,7 +306,8 @@
           "title": "The Conscious Mind: In Search of a Fundamental Theory",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/dualism/"
     },
     {
       "id": "emerg",
@@ -323,7 +332,8 @@
           "volume": "39(4)",
           "pages": "658-678"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/properties-emergent/"
     },
     {
       "id": "eliminat",
@@ -348,7 +358,8 @@
           "title": "Neurophilosophy",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/materialism-eliminative/"
     },
     {
       "id": "a_kim",
@@ -473,7 +484,8 @@
           "title": "Vision",
           "publisher": "W.H. Freeman"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/computational-mind/"
     },
     {
       "id": "conn",
@@ -490,7 +502,8 @@
           "title": "Parallel Distributed Processing",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/connectionism/"
     },
     {
       "id": "embod",
@@ -527,7 +540,8 @@
           "title": "Phénoménologie de la perception",
           "publisher": "Gallimard"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/embodied-cognition/"
     },
     {
       "id": "embed",
@@ -544,7 +558,8 @@
           "title": "The Ecological Approach to Visual Perception",
           "publisher": "Houghton Mifflin"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/situated-cognition/"
     },
     {
       "id": "ext",
@@ -584,7 +599,8 @@
           "volume": "14(1)",
           "pages": "43-64"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/extended-mind/"
     },
     {
       "id": "enact",
@@ -607,7 +623,8 @@
           "title": "Enactivist Interventions: Rethinking the Mind",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/embodied-cognition/#EnaCog"
     },
     {
       "id": "enact_auto",
@@ -636,7 +653,8 @@
           "title": "Autopoiesis and Cognition: The Realization of the Living",
           "publisher": "D. Reidel"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/autopoiesis/"
     },
     {
       "id": "enact_sm",
@@ -723,7 +741,8 @@
           "volume": "11(2)",
           "pages": "127-138"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/bayesian-brain/"
     },
     {
       "id": "eco_psy",
@@ -740,7 +759,8 @@
           "title": "The Ecological Approach to Visual Perception",
           "publisher": "Houghton Mifflin"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/perception-episprob/#EcoApp"
     },
     {
       "id": "a_clark",
@@ -856,7 +876,8 @@
           "title": "The Conscious Mind: In Search of a Fundamental Theory",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/"
     },
     {
       "id": "gap",
@@ -881,7 +902,8 @@
           "title": "Purple Haze: The Puzzle of Conscious Experience",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#ExpGap"
     },
     {
       "id": "qualia",
@@ -916,7 +938,8 @@
           "publisher": "Oxford University Press",
           "pages": "42-77"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/qualia/"
     },
     {
       "id": "zombie",
@@ -939,7 +962,8 @@
           "title": "Naming and Necessity",
           "publisher": "Harvard University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/zombies/"
     },
     {
       "id": "mary",
@@ -965,7 +989,8 @@
           "in": "Mind, Method, and Conditionals",
           "publisher": "Routledge"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/qualia-knowledge/"
     },
     {
       "id": "bat",
@@ -984,7 +1009,8 @@
           "volume": "83(4)",
           "pages": "435-450"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#SubExpQua"
     },
     {
       "id": "hetpheno",
@@ -1024,7 +1050,8 @@
           "title": "Consciousness Explained",
           "publisher": "Little, Brown"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#MulDra"
     },
     {
       "id": "myst",
@@ -1043,7 +1070,8 @@
           "volume": "98(391)",
           "pages": "349-366"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#Mys"
     },
     {
       "id": "iit",
@@ -1108,7 +1136,8 @@
           "in": "Phenomenal Knowledge and Phenomenal Concepts (Alter & Walter, dir.)",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#PheCon"
     },
     {
       "id": "gwt",
@@ -1133,7 +1162,8 @@
           "volume": "79(1-2)",
           "pages": "1-37"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness/#GloWorThe"
     },
     {
       "id": "hot",
@@ -1158,7 +1188,8 @@
           "volume": "15(8)",
           "pages": "365-373"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness-higher/"
     },
     {
       "id": "a_chalmers",
@@ -1337,7 +1368,8 @@
           "title": "Psychosemantics",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/language-thought/"
     },
     {
       "id": "extern",
@@ -1364,7 +1396,8 @@
           "volume": "4(1)",
           "pages": "73-121"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/content-externalism/"
     },
     {
       "id": "intern",
@@ -1381,7 +1414,8 @@
           "title": "Psychosemantics",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/content-narrow/"
     },
     {
       "id": "teleo",
@@ -1404,7 +1438,8 @@
           "title": "Philosophical Naturalism",
           "publisher": "Blackwell"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/content-teleological/"
     },
     {
       "id": "anti_rep",
@@ -1427,7 +1462,8 @@
           "title": "Radical Embodied Cognitive Science",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/embodied-cognition/#RadEna"
     },
     {
       "id": "norm",
@@ -1450,7 +1486,8 @@
           "title": "Philosophical Investigations",
           "publisher": "Blackwell"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/meaning-normativity/"
     },
     {
       "id": "represent",
@@ -1473,7 +1510,8 @@
           "title": "Ten Problems of Consciousness",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/perception-contents/"
     },
     {
       "id": "disjoncti",
@@ -1497,7 +1535,8 @@
           "title": "Perception and Its Objects",
           "publisher": "Oxford University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/perception-disjunctive/"
     },
     {
       "id": "a_fodor",
@@ -1594,7 +1633,8 @@
           "title": "Physicalism, or Something Near Enough",
           "publisher": "Princeton University Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/mental-causation/"
     },
     {
       "id": "interv",
@@ -1619,7 +1659,8 @@
           "volume": "106(9)",
           "pages": "475-502"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/mental-causation/#IntApp"
     },
     {
       "id": "epiph",
@@ -1645,7 +1686,8 @@
           "volume": "16",
           "pages": "555-580"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/epiphenomenalism/"
     },
     {
       "id": "caus_desc",
@@ -1670,7 +1712,8 @@
           "journal": "Noûs",
           "volume": "39(4)"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/properties-emergent/#DowCau"
     },
     {
       "id": "chambre",
@@ -1689,7 +1732,8 @@
           "volume": "3(3)",
           "pages": "417-424"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/chinese-room/"
     },
     {
       "id": "neuroex",
@@ -1742,7 +1786,8 @@
           "title": "The Illusion of Conscious Will",
           "publisher": "MIT Press"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/freewill/"
     },
     {
       "id": "agentivite",
@@ -1767,7 +1812,8 @@
           "journal": "Cognition",
           "volume": "107(1)"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/agency/"
     },
     {
       "id": "a_searle",
@@ -1881,7 +1927,8 @@
           "title": "The Self and Its Brain",
           "publisher": "Springer"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/dualism/"
     },
     {
       "id": "processus",
@@ -1898,7 +1945,8 @@
           "title": "Process and Reality",
           "publisher": "Macmillan"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/process-philosophy/"
     },
     {
       "id": "it_from_bit",
@@ -1916,7 +1964,69 @@
           "in": "Complexity, Entropy, and the Physics of Information (Zurek, dir.)",
           "publisher": "Addison-Wesley"
         }
-      ]
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/it-from-bit/"
+    },
+    {
+      "id": "representation_mentale",
+      "label": "Représentation mentale",
+      "family": "sem",
+      "type": "concept",
+      "weight": 8,
+      "period": "1975-",
+      "description": "Concept pivot : un état interne qui « tient lieu de » quelque chose dans le monde. Présupposé central du computationnalisme et du fonctionnalisme, contesté par l'enactivisme radical. La question de la nature des représentations (symbolique, distribuée, incarnée, absente) traverse toute la carte.",
+      "references": [
+        {
+          "author": "Pitt, D.",
+          "year": 2020,
+          "title": "Mental Representation",
+          "in": "Stanford Encyclopedia of Philosophy"
+        }
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/mental-representation/"
+    },
+    {
+      "id": "unite_conscience",
+      "label": "Unité de la conscience",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1781/2010-",
+      "description": "Pourquoi l'expérience consciente se présente-t-elle comme unifiée ? Le binding problem en neurosciences, l'unité transcendantale de l'aperception chez Kant, l'unité phénoménale chez Bayne. L'IIT en fait un axiome fondamental (intégration).",
+      "references": [
+        {
+          "author": "Bayne, T.",
+          "year": 2010,
+          "title": "The Unity of Consciousness",
+          "publisher": "Oxford University Press"
+        },
+        {
+          "author": "Bayne, T. & Chalmers, D.J.",
+          "year": 2003,
+          "title": "What is the Unity of Consciousness?",
+          "in": "The Unity of Consciousness (Cleeremans, dir.)",
+          "publisher": "Oxford University Press"
+        }
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness-unity/"
+    },
+    {
+      "id": "conscience_intentionnalite",
+      "label": "Conscience et intentionnalité",
+      "family": "exp",
+      "type": "concept",
+      "weight": 7,
+      "period": "1874/2002-",
+      "description": "Nœud-pont entre les deux propriétés cardinales du mental. Brentano les identifiait ; la tradition analytique les a dissociées. Les débats contemporains (Horgan & Tienson, Kriegel, Siewert) examinent si toute conscience est intentionnelle et si toute intentionnalité est consciente.",
+      "references": [
+        {
+          "author": "Siewert, C.",
+          "year": 2022,
+          "title": "Consciousness and Intentionality",
+          "in": "Stanford Encyclopedia of Philosophy"
+        }
+      ],
+      "sep_url": "https://plato.stanford.edu/entries/consciousness-intentionality/"
     }
   ],
   "links": [
@@ -2477,6 +2587,706 @@
       "target": "comp",
       "type": "reformulation",
       "description": "L'hypothèse computationnelle de l'univers prolonge le computationnalisme au niveau physique fondamental"
+    },
+    {
+      "source": "representation_mentale",
+      "target": "lot",
+      "type": "filiation",
+      "description": "Le LOT est une théorie spécifique de la représentation mentale"
+    },
+    {
+      "source": "representation_mentale",
+      "target": "comp",
+      "type": "filiation",
+      "description": "Le computationnalisme présuppose des représentations à manipuler"
+    },
+    {
+      "source": "representation_mentale",
+      "target": "anti_rep",
+      "type": "opposition",
+      "description": "L'anti-représentationnalisme conteste la nécessité même de ce concept"
+    },
+    {
+      "source": "representation_mentale",
+      "target": "represent",
+      "type": "filiation",
+      "description": "Le représentationnalisme en philosophie de la perception est une application à l'expérience"
+    },
+    {
+      "source": "unite_conscience",
+      "target": "iit",
+      "type": "filiation",
+      "description": "L'intégration — axiome fondamental d'IIT — est une formalisation de l'unité de la conscience"
+    },
+    {
+      "source": "unite_conscience",
+      "target": "hp",
+      "type": "filiation",
+      "description": "L'unité est une dimension du problème difficile : pourquoi l'expérience est-elle unifiée ?"
+    },
+    {
+      "source": "unite_conscience",
+      "target": "gwt",
+      "type": "reformulation",
+      "description": "Le GWT explique l'unité par la diffusion dans un espace de travail unique"
+    },
+    {
+      "source": "conscience_intentionnalite",
+      "target": "qualia",
+      "type": "filiation",
+      "description": "La question de savoir si les qualia sont intrinsèquement intentionnels"
+    },
+    {
+      "source": "conscience_intentionnalite",
+      "target": "represent",
+      "type": "reformulation",
+      "description": "Le représentationnalisme tente de réduire la conscience à l'intentionnalité"
+    },
+    {
+      "source": "conscience_intentionnalite",
+      "target": "hp",
+      "type": "filiation",
+      "description": "Le hard problem porte sur la conscience phénoménale, non sur l'intentionnalité — mais peut-on les séparer ?"
+    },
+    {
+      "source": "conscience_intentionnalite",
+      "target": "lot",
+      "type": "reformulation",
+      "description": "Le LOT est une théorie de l'intentionnalité qui laisse ouverte la question de la conscience"
+    }
+  ],
+  "parcours_epistemiques": [
+    {
+      "id": "chronologie",
+      "title": "Une chronologie de l'esprit",
+      "subtitle": "Du fantôme dans la machine au cerveau bayésien",
+      "description": "Parcours historique traversant les grandes positions dans l'ordre de leur émergence. Chaque étape est une réponse aux insuffisances de la précédente — mais l'histoire ne va pas dans une seule direction : elle bifurque, revient sur elle-même, et les questions les plus anciennes restent souvent les plus ouvertes.",
+      "color": "#888780",
+      "steps": [
+        {
+          "node": "behaviorisme",
+          "text": "Ryle (1949) tente de dissoudre le problème corps-esprit par l'analyse du langage. Parler d'états mentaux, c'est décrire des dispositions, pas des entités privées. Mais quelque chose résiste : l'expérience elle-même.",
+          "period": "1949"
+        },
+        {
+          "node": "phys_red",
+          "text": "Smart et Place proposent une identité directe : chaque type d'état mental est un type d'état cérébral. Solution élégante, mais trop rigide — Putnam va montrer pourquoi.",
+          "period": "1956-1959"
+        },
+        {
+          "node": "fonc",
+          "text": "Le fonctionnalisme libère le mental de son substrat : ce qui compte, c'est le rôle fonctionnel, pas la réalisation physique. La porte est ouverte à l'IA et aux sciences cognitives. Mais les qualia résistent.",
+          "period": "1967-1974"
+        },
+        {
+          "node": "mon_an",
+          "text": "Davidson (1970) propose une voie médiane : chaque événement mental est physique, mais il n'existe pas de lois reliant les types mentaux aux types physiques. L'autonomie du mental est préservée.",
+          "period": "1970"
+        },
+        {
+          "node": "comp",
+          "text": "Fodor (1975) unifie fonctionnalisme et computationnalisme : penser, c'est calculer sur des symboles. Le paradigme classique des sciences cognitives est en place.",
+          "period": "1975-1982"
+        },
+        {
+          "node": "chambre",
+          "text": "Searle (1980) objecte : un système peut exécuter le bon programme sans rien comprendre. La syntaxe ne produit pas la sémantique. Le fonctionnalisme computationnel vacille.",
+          "period": "1980"
+        },
+        {
+          "node": "conn",
+          "text": "Les réseaux de neurones artificiels (Rumelhart & McClelland, 1986) proposent un calcul sans symboles explicites. Première inflexion du paradigme, mais toujours internaliste.",
+          "period": "1986"
+        },
+        {
+          "node": "eliminat",
+          "text": "Les Churchland radicalisent le physicalisme : la psychologie populaire est une théorie fausse, destinée à être remplacée par les neurosciences.",
+          "period": "1981-1986"
+        },
+        {
+          "node": "md",
+          "text": "Dennett (1991) propose les ébauches multiples : pas de théâtre cartésien, la conscience est un processus distribué de révisions narratives parallèles.",
+          "period": "1991"
+        },
+        {
+          "node": "enact",
+          "text": "Varela, Thompson et Rosch (1991) renversent le paradigme : la cognition n'est pas traitement d'information mais enaction d'un monde signifiant. Le corps et l'environnement sont constitutifs.",
+          "period": "1991"
+        },
+        {
+          "node": "hp",
+          "text": "Chalmers (1995) cristallise la résistance au physicalisme : même une explication fonctionnelle complète laisse ouverte la question de l'expérience. Le problème difficile polarise le champ.",
+          "period": "1995"
+        },
+        {
+          "node": "ext",
+          "text": "Clark et Chalmers (1998) : l'esprit n'est pas dans la tête. Otto et son carnet montrent que la cognition peut s'étendre dans l'environnement.",
+          "period": "1998"
+        },
+        {
+          "node": "iit",
+          "text": "Tononi (2004) propose une mesure mathématique de la conscience : Φ, l'information intégrée irréductible. Une théorie qui implique le panpsychisme.",
+          "period": "2004"
+        },
+        {
+          "node": "pp",
+          "text": "Clark (2013), Hohwy (2013), Friston (2010) : le cerveau est une machine à prédictions bayésiennes. Un cadre qui pourrait unifier computationnalisme et enactivisme.",
+          "period": "2010-2016"
+        },
+        {
+          "node": "panpsy",
+          "text": "Strawson (2006), Goff (2017) : et si la conscience était partout ? Le panpsychisme, longtemps marginal, devient une position respectable — peut-être la seule qui évite à la fois le dualisme et le problème difficile.",
+          "period": "2006-2019"
+        }
+      ]
+    },
+    {
+      "id": "effectivite_emergence",
+      "title": "De l'effectivité à l'émergence",
+      "subtitle": "Le mental agit-il, et si oui, comment ?",
+      "description": "Parcours traversant la question de la causalité mentale — le fil rouge que Gilbert Lechermeier a identifié comme souterrain dans toute la carte. Part de l'évidence intuitive (mes pensées causent mes actes) pour atteindre la question ontologique de l'émergence.",
+      "color": "#D4537E",
+      "steps": [
+        {
+          "node": "fonc",
+          "text": "Point de départ : le fonctionnalisme définit le mental par ses relations causales. L'efficacité causale du mental semble allée de soi — c'est même ce qui le définit.",
+          "period": "1967"
+        },
+        {
+          "node": "phys_nr",
+          "text": "Le physicalisme non réductif maintient que le mental survient sur le physique sans s'y réduire. Mais cette position apparemment confortable recèle une tension.",
+          "period": "1993"
+        },
+        {
+          "node": "excl",
+          "text": "Kim révèle la tension : si tout événement physique a une cause physique suffisante (clôture causale), et si le mental n'est pas réductible au physique, alors le mental est causalement inerte. Dilemme : réduire ou accepter l'épiphénoménalisme.",
+          "period": "1998"
+        },
+        {
+          "node": "epiph",
+          "text": "L'épiphénoménalisme : la conscience accompagne le cerveau comme la fumée accompagne le feu, sans agir sur lui. Conséquence logique de l'exclusion causale — mais qui y croit vraiment ?",
+          "period": "1874/1998"
+        },
+        {
+          "node": "interv",
+          "text": "L'interventionnisme propose une sortie : la causalité n'opère pas à un seul niveau. Les propriétés mentales sont causalement efficaces à leur niveau de description, sans surdétermination.",
+          "period": "2003-2009"
+        },
+        {
+          "node": "caus_desc",
+          "text": "Mais si le mental est causalement efficace à son propre niveau, cela suppose que le tout puisse agir sur les parties — une causalité descendante que la physique classique ne prévoit pas.",
+          "period": "1969/2005"
+        },
+        {
+          "node": "emerg",
+          "text": "L'émergentisme fort : certaines propriétés de niveau supérieur possèdent un pouvoir causal irréductible. La conscience serait l'une d'elles. Mais comment une propriété peut-elle être à la fois dépendante de sa base physique et causalement autonome ?",
+          "period": "1925/2005"
+        },
+        {
+          "node": "hp",
+          "text": "Retour au problème difficile : même si on résout la question de l'efficacité causale du mental, pourquoi cette efficacité s'accompagne-t-elle d'expérience subjective ? L'émergence explique le « comment » — pas le « pourquoi ».",
+          "period": "1995"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "La singularité du vivant (Lechermeier, 2019) : et si la clé n'était pas dans l'esprit seul mais dans la vie elle-même ? La vie comme nouvel état de la matière — une émergence qui précède et fonde l'émergence de la conscience.",
+          "period": "2019"
+        },
+        {
+          "node": "panpsy",
+          "text": "Alternative radicale : le panpsychisme dissout le problème de l'émergence de la conscience en la distribuant partout. Mais il crée le problème de la combinaison — et il efface la singularité du vivant.",
+          "period": "2006-2019"
+        }
+      ]
+    },
+    {
+      "id": "phenomenologie_computationnalisme",
+      "title": "De la phénoménologie au computationnalisme",
+      "subtitle": "L'expérience vécue face à la machine",
+      "description": "Parcours qui retrace la tension fondatrice entre deux façons de penser l'esprit : par l'intérieur (la phénoménologie) et par l'extérieur (le computationnalisme). L'histoire de cette tension est aussi celle d'un refoulement et d'un retour.",
+      "color": "#D85A30",
+      "steps": [
+        {
+          "node": "bat",
+          "text": "Nagel (1974) pose la question en termes irréductibles : il y a quelque chose que ça fait d'être une chauve-souris, et aucune description objective n'y donne accès. La subjectivité est le point de départ.",
+          "period": "1974"
+        },
+        {
+          "node": "qualia",
+          "text": "Les qualia — le rouge du rouge, la douleur de la douleur — sont ce qui reste quand on a tout expliqué fonctionnellement. Ou bien sont-ils une illusion, comme Dennett le soutiendra ?",
+          "period": "1974-1982"
+        },
+        {
+          "node": "embod",
+          "text": "Merleau-Ponty (1945), relu par Lakoff, Johnson, Shapiro : la cognition n'est pas abstraite, elle est façonnée par le corps vécu. La phénoménologie entre dans les sciences cognitives.",
+          "period": "1945/1999"
+        },
+        {
+          "node": "comp",
+          "text": "Le computationnalisme (Fodor, Pylyshyn, Marr) prend le contre-pied radical : l'esprit est un programme. Ce qui compte, c'est la syntaxe des opérations, pas l'expérience vécue du processeur.",
+          "period": "1975-1984"
+        },
+        {
+          "node": "lot",
+          "text": "Le langage de la pensée pousse la logique computationnelle jusqu'au bout : penser, c'est manipuler des symboles selon des règles. La phénoménologie disparaît du tableau.",
+          "period": "1975"
+        },
+        {
+          "node": "chambre",
+          "text": "Searle objecte depuis l'intérieur : un système peut manipuler des symboles sans rien comprendre. La syntaxe ne produit pas la sémantique — ni l'expérience.",
+          "period": "1980"
+        },
+        {
+          "node": "md",
+          "text": "Dennett (1991) tente une synthèse déflationniste : la conscience est réelle mais n'est pas ce que la phénoménologie croit. Pas de théâtre intérieur — juste des processus fonctionnels distribués.",
+          "period": "1991"
+        },
+        {
+          "node": "hp",
+          "text": "Chalmers (1995) refuse la dissolution dennettienne : le problème difficile est réel, et aucune explication fonctionnelle n'y répond. La phénoménologie reprend ses droits — sous forme analytique.",
+          "period": "1995"
+        },
+        {
+          "node": "enact",
+          "text": "L'enactivisme (Varela, Thompson, Rosch) réintroduit Merleau-Ponty dans les sciences cognitives. La cognition n'est ni calcul ni représentation mais couplage vécu avec le monde.",
+          "period": "1991"
+        },
+        {
+          "node": "enact_auto",
+          "text": "L'enactivisme autopoïétique (Thompson, Di Paolo) ancre la cognition dans la vie elle-même. Le vivant fait sens de son monde — la phénoménologie rejoint la biologie.",
+          "period": "2007-2017"
+        },
+        {
+          "node": "pp",
+          "text": "Le traitement prédictif : et si on pouvait être computationnaliste et phénoménologue ? Le cerveau calcule des prédictions, mais l'erreur de prédiction est vécue. Position-charnière, encore instable.",
+          "period": "2013-2016"
+        }
+      ]
+    },
+    {
+      "id": "normativite",
+      "title": "Vers et depuis la normativité",
+      "subtitle": "D'où vient le correct et l'incorrect dans la pensée ?",
+      "description": "Parcours centré sur la question de la normativité du contenu mental : comment un état mental peut-il représenter correctement ou incorrectement ? Cette question, apparemment technique, touche au fondement même de la rationalité et de la connaissance. Parcours particulièrement pertinent pour la philosophie des sciences.",
+      "color": "#185FA5",
+      "steps": [
+        {
+          "node": "norm",
+          "text": "Kripke (1982), lisant Wittgenstein : aucun fait passé ne détermine quelle règle un symbole encode. Si je dis « plus » et que j'ai toujours additionné des nombres inférieurs à 57, rien ne prouve que je ne voulais pas dire « quus » (= plus en dessous de 57, 5 au-dessus). Vertige sceptique.",
+          "period": "1953/1982"
+        },
+        {
+          "node": "lot",
+          "text": "Le langage de la pensée suppose que les symboles mentaux ont un contenu déterminé. Mais comment ce contenu est-il fixé ? Le problème de la disjonction (Fodor, 1990) : si mon détecteur de « cheval » s'active aussi pour des vaches lointaines, que représente-t-il — « cheval » ou « cheval-ou-vache-lointaine » ?",
+          "period": "1975-1990"
+        },
+        {
+          "node": "extern",
+          "text": "L'externalisme (Putnam, Burge) déplace la source de la normativité hors de la tête : le contenu est fixé par l'environnement naturel et social. L'eau sur Terre et le « twin-water » sur Terre Jumelle diffèrent — même si les états internes sont identiques.",
+          "period": "1975-1979"
+        },
+        {
+          "node": "teleo",
+          "text": "La téléosémantique (Millikan, 1984) propose une solution biologique : un état mental représente X parce que sa fonction propre, sélectionnée par l'évolution, est de co-varier avec X. La norme vient de l'histoire évolutive.",
+          "period": "1984-1993"
+        },
+        {
+          "node": "representation_mentale",
+          "text": "Nœud pivot : la notion même de représentation mentale est-elle nécessaire ? Les débats sur la normativité présupposent qu'il y a quelque chose à représenter correctement. Mais si la cognition ne représente pas ?",
+          "period": "1975-"
+        },
+        {
+          "node": "anti_rep",
+          "text": "L'anti-représentationnalisme (Hutto & Myin, 2013) : la cognition de base opère sans contenu. Pas de représentation, pas de normativité du contenu — le problème se dissout. Mais la dissolution est-elle légitime ?",
+          "period": "2013"
+        },
+        {
+          "node": "enact",
+          "text": "L'enactivisme reformule la normativité : le « correct » n'est pas la correspondance entre représentation et monde, mais la viabilité du couplage organisme-environnement. Le sens n'est pas donné mais enacté.",
+          "period": "1991"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "Lechermeier (2019) : la question de la normativité rejoint celle du vivant. La vie elle-même « norme » : un organisme distingue ce qui lui est favorable de ce qui lui est délétère. La normativité commence avec la vie, pas avec le langage.",
+          "period": "2019"
+        }
+      ]
+    },
+    {
+      "id": "chemins_information",
+      "title": "Les chemins de l'information",
+      "subtitle": "De Shannon à la conscience — le fil du physicien",
+      "description": "Parcours qui suit le concept d'information depuis sa formalisation mathématique jusqu'à son rôle dans les théories contemporaines de la conscience. C'est le chemin naturel pour un physicien-philosophe : que se passe-t-il si l'information est plus fondamentale que la matière ?",
+      "color": "#0F6E56",
+      "steps": [
+        {
+          "node": "comp",
+          "text": "Le computationnalisme introduit l'information dans l'explication du mental : penser, c'est traiter de l'information. Mais l'information est ici syntaxique — des symboles manipulés selon des règles, sans que la question de la conscience soit posée.",
+          "period": "1960-1975"
+        },
+        {
+          "node": "lot",
+          "text": "Fodor : les symboles mentaux portent de l'information sémantique sur le monde, fixée par des relations causales-informationnelles (Dretske, 1981). L'information acquiert un contenu.",
+          "period": "1975-1981"
+        },
+        {
+          "node": "conn",
+          "text": "Les réseaux de neurones distribuent l'information dans des patterns d'activation plutôt que dans des symboles discrets. L'information change de forme — mais reste interne.",
+          "period": "1986"
+        },
+        {
+          "node": "it_from_bit",
+          "text": "Wheeler (1990) : « It from bit » — chaque particule, chaque champ, chaque constante physique dérive ultimement de réponses binaires. L'information est plus fondamentale que la matière. Renversement ontologique.",
+          "period": "1990"
+        },
+        {
+          "node": "mon_ru",
+          "text": "Le monisme russellien : la physique ne décrit que la structure relationnelle du monde. Si l'information est structure, alors les propriétés intrinsèques qui instancient cette structure pourraient être de nature expérientielle.",
+          "period": "1927/2015"
+        },
+        {
+          "node": "iit",
+          "text": "Tononi : la conscience n'est pas un sous-produit du traitement de l'information — elle est identique à l'information intégrée irréductible (Φ). L'information ne porte plus seulement sur le monde : elle est le monde conscient.",
+          "period": "2004-2015"
+        },
+        {
+          "node": "unite_conscience",
+          "text": "L'unité de la conscience — le fait que l'expérience se présente comme un tout — est exactement ce que Φ mesure : l'irréductibilité de l'information intégrée. Le binding problem rejoint la physique de l'information.",
+          "period": "2010"
+        },
+        {
+          "node": "panpsy",
+          "text": "Si la conscience est information intégrée, et si toute structure physique intègre un minimum d'information, alors toute matière possède un degré (infime) de conscience. Le panpsychisme n'est plus une spéculation — c'est une conséquence.",
+          "period": "2006-2019"
+        },
+        {
+          "node": "pp",
+          "text": "Le traitement prédictif reformule le tout : le cerveau est un système qui minimise l'erreur de prédiction — c'est-à-dire qui optimise son modèle informationnel du monde. L'information redevient processus.",
+          "period": "2010-2016"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "Le vivant comme système informationnel singulier : un organisme ne traite pas seulement de l'information — il en génère, en intègre et en préserve d'une manière que les systèmes inertes ne font pas. La vie est peut-être le seuil où l'information devient expérience.",
+          "period": "2019"
+        }
+      ]
+    }
+  ],
+  "parcours": [
+    {
+      "id": "chronologie",
+      "title": "Une chronologie de l'esprit",
+      "subtitle": "Du fantôme dans la machine au cerveau bayésien",
+      "description": "Parcours historique traversant les grandes positions dans l'ordre de leur émergence. Chaque étape est une réponse aux insuffisances de la précédente — mais l'histoire ne va pas dans une seule direction : elle bifurque, revient sur elle-même, et les questions les plus anciennes restent souvent les plus ouvertes.",
+      "color": "#888780",
+      "steps": [
+        {
+          "node": "behaviorisme",
+          "text": "Ryle (1949) tente de dissoudre le problème corps-esprit par l'analyse du langage. Parler d'états mentaux, c'est décrire des dispositions, pas des entités privées. Mais quelque chose résiste : l'expérience elle-même.",
+          "period": "1949"
+        },
+        {
+          "node": "phys_red",
+          "text": "Smart et Place proposent une identité directe : chaque type d'état mental est un type d'état cérébral. Solution élégante, mais trop rigide — Putnam va montrer pourquoi.",
+          "period": "1956-1959"
+        },
+        {
+          "node": "fonc",
+          "text": "Le fonctionnalisme libère le mental de son substrat : ce qui compte, c'est le rôle fonctionnel, pas la réalisation physique. La porte est ouverte à l'IA et aux sciences cognitives. Mais les qualia résistent.",
+          "period": "1967-1974"
+        },
+        {
+          "node": "mon_an",
+          "text": "Davidson (1970) propose une voie médiane : chaque événement mental est physique, mais il n'existe pas de lois reliant les types mentaux aux types physiques. L'autonomie du mental est préservée.",
+          "period": "1970"
+        },
+        {
+          "node": "comp",
+          "text": "Fodor (1975) unifie fonctionnalisme et computationnalisme : penser, c'est calculer sur des symboles. Le paradigme classique des sciences cognitives est en place.",
+          "period": "1975-1982"
+        },
+        {
+          "node": "chambre",
+          "text": "Searle (1980) objecte : un système peut exécuter le bon programme sans rien comprendre. La syntaxe ne produit pas la sémantique. Le fonctionnalisme computationnel vacille.",
+          "period": "1980"
+        },
+        {
+          "node": "conn",
+          "text": "Les réseaux de neurones artificiels (Rumelhart & McClelland, 1986) proposent un calcul sans symboles explicites. Première inflexion du paradigme, mais toujours internaliste.",
+          "period": "1986"
+        },
+        {
+          "node": "eliminat",
+          "text": "Les Churchland radicalisent le physicalisme : la psychologie populaire est une théorie fausse, destinée à être remplacée par les neurosciences.",
+          "period": "1981-1986"
+        },
+        {
+          "node": "md",
+          "text": "Dennett (1991) propose les ébauches multiples : pas de théâtre cartésien, la conscience est un processus distribué de révisions narratives parallèles.",
+          "period": "1991"
+        },
+        {
+          "node": "enact",
+          "text": "Varela, Thompson et Rosch (1991) renversent le paradigme : la cognition n'est pas traitement d'information mais enaction d'un monde signifiant. Le corps et l'environnement sont constitutifs.",
+          "period": "1991"
+        },
+        {
+          "node": "hp",
+          "text": "Chalmers (1995) cristallise la résistance au physicalisme : même une explication fonctionnelle complète laisse ouverte la question de l'expérience. Le problème difficile polarise le champ.",
+          "period": "1995"
+        },
+        {
+          "node": "ext",
+          "text": "Clark et Chalmers (1998) : l'esprit n'est pas dans la tête. Otto et son carnet montrent que la cognition peut s'étendre dans l'environnement.",
+          "period": "1998"
+        },
+        {
+          "node": "iit",
+          "text": "Tononi (2004) propose une mesure mathématique de la conscience : Φ, l'information intégrée irréductible. Une théorie qui implique le panpsychisme.",
+          "period": "2004"
+        },
+        {
+          "node": "pp",
+          "text": "Clark (2013), Hohwy (2013), Friston (2010) : le cerveau est une machine à prédictions bayésiennes. Un cadre qui pourrait unifier computationnalisme et enactivisme.",
+          "period": "2010-2016"
+        },
+        {
+          "node": "panpsy",
+          "text": "Strawson (2006), Goff (2017) : et si la conscience était partout ? Le panpsychisme, longtemps marginal, devient une position respectable — peut-être la seule qui évite à la fois le dualisme et le problème difficile.",
+          "period": "2006-2019"
+        }
+      ]
+    },
+    {
+      "id": "effectivite_emergence",
+      "title": "De l'effectivité à l'émergence",
+      "subtitle": "Le mental agit-il, et si oui, comment ?",
+      "description": "Parcours traversant la question de la causalité mentale — le fil rouge que Gilbert Lechermeier a identifié comme souterrain dans toute la carte. Part de l'évidence intuitive (mes pensées causent mes actes) pour atteindre la question ontologique de l'émergence.",
+      "color": "#D4537E",
+      "steps": [
+        {
+          "node": "fonc",
+          "text": "Point de départ : le fonctionnalisme définit le mental par ses relations causales. L'efficacité causale du mental semble allée de soi — c'est même ce qui le définit.",
+          "period": "1967"
+        },
+        {
+          "node": "phys_nr",
+          "text": "Le physicalisme non réductif maintient que le mental survient sur le physique sans s'y réduire. Mais cette position apparemment confortable recèle une tension.",
+          "period": "1993"
+        },
+        {
+          "node": "excl",
+          "text": "Kim révèle la tension : si tout événement physique a une cause physique suffisante (clôture causale), et si le mental n'est pas réductible au physique, alors le mental est causalement inerte. Dilemme : réduire ou accepter l'épiphénoménalisme.",
+          "period": "1998"
+        },
+        {
+          "node": "epiph",
+          "text": "L'épiphénoménalisme : la conscience accompagne le cerveau comme la fumée accompagne le feu, sans agir sur lui. Conséquence logique de l'exclusion causale — mais qui y croit vraiment ?",
+          "period": "1874/1998"
+        },
+        {
+          "node": "interv",
+          "text": "L'interventionnisme propose une sortie : la causalité n'opère pas à un seul niveau. Les propriétés mentales sont causalement efficaces à leur niveau de description, sans surdétermination.",
+          "period": "2003-2009"
+        },
+        {
+          "node": "caus_desc",
+          "text": "Mais si le mental est causalement efficace à son propre niveau, cela suppose que le tout puisse agir sur les parties — une causalité descendante que la physique classique ne prévoit pas.",
+          "period": "1969/2005"
+        },
+        {
+          "node": "emerg",
+          "text": "L'émergentisme fort : certaines propriétés de niveau supérieur possèdent un pouvoir causal irréductible. La conscience serait l'une d'elles. Mais comment une propriété peut-elle être à la fois dépendante de sa base physique et causalement autonome ?",
+          "period": "1925/2005"
+        },
+        {
+          "node": "hp",
+          "text": "Retour au problème difficile : même si on résout la question de l'efficacité causale du mental, pourquoi cette efficacité s'accompagne-t-elle d'expérience subjective ? L'émergence explique le « comment » — pas le « pourquoi ».",
+          "period": "1995"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "La singularité du vivant (Lechermeier, 2019) : et si la clé n'était pas dans l'esprit seul mais dans la vie elle-même ? La vie comme nouvel état de la matière — une émergence qui précède et fonde l'émergence de la conscience.",
+          "period": "2019"
+        },
+        {
+          "node": "panpsy",
+          "text": "Alternative radicale : le panpsychisme dissout le problème de l'émergence de la conscience en la distribuant partout. Mais il crée le problème de la combinaison — et il efface la singularité du vivant.",
+          "period": "2006-2019"
+        }
+      ]
+    },
+    {
+      "id": "phenomenologie_computationnalisme",
+      "title": "De la phénoménologie au computationnalisme",
+      "subtitle": "L'expérience vécue face à la machine",
+      "description": "Parcours qui retrace la tension fondatrice entre deux façons de penser l'esprit : par l'intérieur (la phénoménologie) et par l'extérieur (le computationnalisme). L'histoire de cette tension est aussi celle d'un refoulement et d'un retour.",
+      "color": "#D85A30",
+      "steps": [
+        {
+          "node": "bat",
+          "text": "Nagel (1974) pose la question en termes irréductibles : il y a quelque chose que ça fait d'être une chauve-souris, et aucune description objective n'y donne accès. La subjectivité est le point de départ.",
+          "period": "1974"
+        },
+        {
+          "node": "qualia",
+          "text": "Les qualia — le rouge du rouge, la douleur de la douleur — sont ce qui reste quand on a tout expliqué fonctionnellement. Ou bien sont-ils une illusion, comme Dennett le soutiendra ?",
+          "period": "1974-1982"
+        },
+        {
+          "node": "embod",
+          "text": "Merleau-Ponty (1945), relu par Lakoff, Johnson, Shapiro : la cognition n'est pas abstraite, elle est façonnée par le corps vécu. La phénoménologie entre dans les sciences cognitives.",
+          "period": "1945/1999"
+        },
+        {
+          "node": "comp",
+          "text": "Le computationnalisme (Fodor, Pylyshyn, Marr) prend le contre-pied radical : l'esprit est un programme. Ce qui compte, c'est la syntaxe des opérations, pas l'expérience vécue du processeur.",
+          "period": "1975-1984"
+        },
+        {
+          "node": "lot",
+          "text": "Le langage de la pensée pousse la logique computationnelle jusqu'au bout : penser, c'est manipuler des symboles selon des règles. La phénoménologie disparaît du tableau.",
+          "period": "1975"
+        },
+        {
+          "node": "chambre",
+          "text": "Searle objecte depuis l'intérieur : un système peut manipuler des symboles sans rien comprendre. La syntaxe ne produit pas la sémantique — ni l'expérience.",
+          "period": "1980"
+        },
+        {
+          "node": "md",
+          "text": "Dennett (1991) tente une synthèse déflationniste : la conscience est réelle mais n'est pas ce que la phénoménologie croit. Pas de théâtre intérieur — juste des processus fonctionnels distribués.",
+          "period": "1991"
+        },
+        {
+          "node": "hp",
+          "text": "Chalmers (1995) refuse la dissolution dennettienne : le problème difficile est réel, et aucune explication fonctionnelle n'y répond. La phénoménologie reprend ses droits — sous forme analytique.",
+          "period": "1995"
+        },
+        {
+          "node": "enact",
+          "text": "L'enactivisme (Varela, Thompson, Rosch) réintroduit Merleau-Ponty dans les sciences cognitives. La cognition n'est ni calcul ni représentation mais couplage vécu avec le monde.",
+          "period": "1991"
+        },
+        {
+          "node": "enact_auto",
+          "text": "L'enactivisme autopoïétique (Thompson, Di Paolo) ancre la cognition dans la vie elle-même. Le vivant fait sens de son monde — la phénoménologie rejoint la biologie.",
+          "period": "2007-2017"
+        },
+        {
+          "node": "pp",
+          "text": "Le traitement prédictif : et si on pouvait être computationnaliste et phénoménologue ? Le cerveau calcule des prédictions, mais l'erreur de prédiction est vécue. Position-charnière, encore instable.",
+          "period": "2013-2016"
+        }
+      ]
+    },
+    {
+      "id": "normativite",
+      "title": "Vers et depuis la normativité",
+      "subtitle": "D'où vient le correct et l'incorrect dans la pensée ?",
+      "description": "Parcours centré sur la question de la normativité du contenu mental : comment un état mental peut-il représenter correctement ou incorrectement ? Cette question, apparemment technique, touche au fondement même de la rationalité et de la connaissance. Parcours particulièrement pertinent pour la philosophie des sciences.",
+      "color": "#185FA5",
+      "steps": [
+        {
+          "node": "norm",
+          "text": "Kripke (1982), lisant Wittgenstein : aucun fait passé ne détermine quelle règle un symbole encode. Si je dis « plus » et que j'ai toujours additionné des nombres inférieurs à 57, rien ne prouve que je ne voulais pas dire « quus » (= plus en dessous de 57, 5 au-dessus). Vertige sceptique.",
+          "period": "1953/1982"
+        },
+        {
+          "node": "lot",
+          "text": "Le langage de la pensée suppose que les symboles mentaux ont un contenu déterminé. Mais comment ce contenu est-il fixé ? Le problème de la disjonction (Fodor, 1990) : si mon détecteur de « cheval » s'active aussi pour des vaches lointaines, que représente-t-il — « cheval » ou « cheval-ou-vache-lointaine » ?",
+          "period": "1975-1990"
+        },
+        {
+          "node": "extern",
+          "text": "L'externalisme (Putnam, Burge) déplace la source de la normativité hors de la tête : le contenu est fixé par l'environnement naturel et social. L'eau sur Terre et le « twin-water » sur Terre Jumelle diffèrent — même si les états internes sont identiques.",
+          "period": "1975-1979"
+        },
+        {
+          "node": "teleo",
+          "text": "La téléosémantique (Millikan, 1984) propose une solution biologique : un état mental représente X parce que sa fonction propre, sélectionnée par l'évolution, est de co-varier avec X. La norme vient de l'histoire évolutive.",
+          "period": "1984-1993"
+        },
+        {
+          "node": "representation_mentale",
+          "text": "Nœud pivot : la notion même de représentation mentale est-elle nécessaire ? Les débats sur la normativité présupposent qu'il y a quelque chose à représenter correctement. Mais si la cognition ne représente pas ?",
+          "period": "1975-"
+        },
+        {
+          "node": "anti_rep",
+          "text": "L'anti-représentationnalisme (Hutto & Myin, 2013) : la cognition de base opère sans contenu. Pas de représentation, pas de normativité du contenu — le problème se dissout. Mais la dissolution est-elle légitime ?",
+          "period": "2013"
+        },
+        {
+          "node": "enact",
+          "text": "L'enactivisme reformule la normativité : le « correct » n'est pas la correspondance entre représentation et monde, mais la viabilité du couplage organisme-environnement. Le sens n'est pas donné mais enacté.",
+          "period": "1991"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "Lechermeier (2019) : la question de la normativité rejoint celle du vivant. La vie elle-même « norme » : un organisme distingue ce qui lui est favorable de ce qui lui est délétère. La normativité commence avec la vie, pas avec le langage.",
+          "period": "2019"
+        }
+      ]
+    },
+    {
+      "id": "chemins_information",
+      "title": "Les chemins de l'information",
+      "subtitle": "De Shannon à la conscience — le fil du physicien",
+      "description": "Parcours qui suit le concept d'information depuis sa formalisation mathématique jusqu'à son rôle dans les théories contemporaines de la conscience. C'est le chemin naturel pour un physicien-philosophe : que se passe-t-il si l'information est plus fondamentale que la matière ?",
+      "color": "#0F6E56",
+      "steps": [
+        {
+          "node": "comp",
+          "text": "Le computationnalisme introduit l'information dans l'explication du mental : penser, c'est traiter de l'information. Mais l'information est ici syntaxique — des symboles manipulés selon des règles, sans que la question de la conscience soit posée.",
+          "period": "1960-1975"
+        },
+        {
+          "node": "lot",
+          "text": "Fodor : les symboles mentaux portent de l'information sémantique sur le monde, fixée par des relations causales-informationnelles (Dretske, 1981). L'information acquiert un contenu.",
+          "period": "1975-1981"
+        },
+        {
+          "node": "conn",
+          "text": "Les réseaux de neurones distribuent l'information dans des patterns d'activation plutôt que dans des symboles discrets. L'information change de forme — mais reste interne.",
+          "period": "1986"
+        },
+        {
+          "node": "it_from_bit",
+          "text": "Wheeler (1990) : « It from bit » — chaque particule, chaque champ, chaque constante physique dérive ultimement de réponses binaires. L'information est plus fondamentale que la matière. Renversement ontologique.",
+          "period": "1990"
+        },
+        {
+          "node": "mon_ru",
+          "text": "Le monisme russellien : la physique ne décrit que la structure relationnelle du monde. Si l'information est structure, alors les propriétés intrinsèques qui instancient cette structure pourraient être de nature expérientielle.",
+          "period": "1927/2015"
+        },
+        {
+          "node": "iit",
+          "text": "Tononi : la conscience n'est pas un sous-produit du traitement de l'information — elle est identique à l'information intégrée irréductible (Φ). L'information ne porte plus seulement sur le monde : elle est le monde conscient.",
+          "period": "2004-2015"
+        },
+        {
+          "node": "unite_conscience",
+          "text": "L'unité de la conscience — le fait que l'expérience se présente comme un tout — est exactement ce que Φ mesure : l'irréductibilité de l'information intégrée. Le binding problem rejoint la physique de l'information.",
+          "period": "2010"
+        },
+        {
+          "node": "panpsy",
+          "text": "Si la conscience est information intégrée, et si toute structure physique intègre un minimum d'information, alors toute matière possède un degré (infime) de conscience. Le panpsychisme n'est plus une spéculation — c'est une conséquence.",
+          "period": "2006-2019"
+        },
+        {
+          "node": "pp",
+          "text": "Le traitement prédictif reformule le tout : le cerveau est un système qui minimise l'erreur de prédiction — c'est-à-dire qui optimise son modèle informationnel du monde. L'information redevient processus.",
+          "period": "2010-2016"
+        },
+        {
+          "node": "vivant_singularite",
+          "text": "Le vivant comme système informationnel singulier : un organisme ne traite pas seulement de l'information — il en génère, en intègre et en préserve d'une manière que les systèmes inertes ne font pas. La vie est peut-être le seuil où l'information devient expérience.",
+          "period": "2019"
+        }
+      ]
     }
   ]
 }
