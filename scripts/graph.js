@@ -2,7 +2,7 @@
    graph.js — D3 force-directed simulation & SVG rendering
    ========================================================================== */
 
-export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeLeave, onBackgroundClick }) {
+export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeLeave, onBackgroundClick, onLinkHover, onLinkLeave }) {
   const svg = d3.select(container);
   const rect = container.getBoundingClientRect();
   const width = rect.width || window.innerWidth;
@@ -93,6 +93,21 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
       if (d.type === 'opposition') return 0.35;
       if (d.type === 'reformulation') return 0.3;
       return 0.15;
+    });
+
+  // Hit zones invisibles pour les liens (facilite le survol)
+  const linkHitZones = linkGroup.selectAll('line.link-hit')
+    .data(links)
+    .join('line')
+    .attr('class', 'link-hit')
+    .attr('stroke', 'transparent')
+    .attr('stroke-width', 14)
+    .style('cursor', 'pointer')
+    .on('mouseenter', (event, d) => {
+      if (onLinkHover) onLinkHover(event, d, nodeMap);
+    })
+    .on('mouseleave', (event, d) => {
+      if (onLinkLeave) onLinkLeave(event, d);
     });
 
   // ---------- Family labels ----------
@@ -266,6 +281,12 @@ export function createGraph(container, data, { onNodeClick, onNodeHover, onNodeL
 
   function ticked() {
     linkElements
+      .attr('x1', d => d.source.x)
+      .attr('y1', d => d.source.y)
+      .attr('x2', d => d.target.x)
+      .attr('y2', d => d.target.y);
+
+    linkHitZones
       .attr('x1', d => d.source.x)
       .attr('y1', d => d.source.y)
       .attr('x2', d => d.target.x)

@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/main.css?v=1.2">
 </head>
 <body>
 
@@ -20,6 +20,16 @@
       <p class="header-subtitle">Cartographie conceptuelle contemporaine</p>
     </div>
     <div class="header-controls">
+      <div class="parcours-dropdown">
+        <button id="parcours-toggle" class="control-btn" title="Parcours guidés">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="3" cy="4" r="1.5"/><circle cx="8" cy="12" r="1.5"/><circle cx="13" cy="4" r="1.5"/>
+            <path d="M4.2 5.2L6.8 10.8M9.2 10.8L11.8 5.2"/>
+          </svg>
+          <span>Parcours</span>
+        </button>
+        <div id="parcours-menu" class="parcours-menu" aria-hidden="true"></div>
+      </div>
       <button id="toggle-authors" class="control-btn" title="Afficher/masquer les auteurs">
         <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.5">
           <circle cx="8" cy="5" r="3"/>
@@ -51,6 +61,9 @@
     <button id="zoom-reset" class="zoom-btn" title="R&eacute;initialiser le zoom" style="font-size:13px">&#8634;</button>
   </div>
 
+  <!-- Parcours exit button (visible only in parcours mode) -->
+  <button id="parcours-exit" class="parcours-exit-btn" aria-hidden="true">Quitter le parcours</button>
+
   <!-- Tooltip -->
   <div id="tooltip" class="tooltip" aria-hidden="true"></div>
 
@@ -76,6 +89,10 @@
           <span>Reformulation</span>
         </div>
       </div>
+      <label class="legend-toggle" id="toggle-link-tooltips">
+        <input type="checkbox" checked>
+        <span>Afficher les relations entre concepts</span>
+      </label>
     </div>
   </div>
 
@@ -88,6 +105,6 @@
   <!-- D3.js -->
   <script src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
   <!-- App modules -->
-  <script type="module" src="scripts/app.js"></script>
+  <script type="module" src="scripts/app.js?v=1.2"></script>
 </body>
 </html>

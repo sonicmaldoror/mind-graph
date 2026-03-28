@@ -29,6 +29,44 @@ export function handleNodeLeave() {
   tooltip.classList.remove('visible');
 }
 
+/* ---------- Link tooltip ---------- */
+
+const linkTypeLabels = {
+  filiation: 'Filiation',
+  opposition: 'Opposition',
+  reformulation: 'Reformulation'
+};
+
+const linkTypeColors = {
+  filiation: 'var(--text-muted)',
+  opposition: '#c44',
+  reformulation: '#4A90D9'
+};
+
+export function handleLinkHover(event, d, nodeMap) {
+  const srcId = typeof d.source === 'object' ? d.source.id : d.source;
+  const tgtId = typeof d.target === 'object' ? d.target.id : d.target;
+  const srcNode = typeof d.source === 'object' ? d.source : nodeMap.get(srcId);
+  const tgtNode = typeof d.target === 'object' ? d.target : nodeMap.get(tgtId);
+  const srcLabel = srcNode?.label || srcId;
+  const tgtLabel = tgtNode?.label || tgtId;
+  const typeLabel = linkTypeLabels[d.type] || d.type;
+  const typeColor = linkTypeColors[d.type] || 'var(--text-muted)';
+
+  tooltip.innerHTML = `
+    <div class="tooltip-link-type" style="color: ${typeColor}">${typeLabel}</div>
+    <div class="tooltip-link-nodes">${srcLabel} &harr; ${tgtLabel}</div>
+    ${d.description ? `<div class="tooltip-desc">${truncate(d.description, 200)}</div>` : ''}
+  `;
+
+  tooltip.classList.add('visible');
+  positionTooltip(event);
+}
+
+export function handleLinkLeave() {
+  tooltip.classList.remove('visible');
+}
+
 function positionTooltip(event) {
   const padding = 16;
   const x = event.clientX + padding;

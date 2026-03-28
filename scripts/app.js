@@ -2,17 +2,20 @@
    app.js — Entry point: fetch data, init modules, handle toggles
    ========================================================================== */
 
-import { createGraph } from './graph.js';
+import { createGraph } from './graph.js?v=1.2';
 import {
   handleNodeHover,
   handleNodeLeave,
+  handleLinkHover,
+  handleLinkLeave,
   highlightNode,
   clearHighlight,
   clearFamilyFilter,
   buildLegend,
   getActiveFamily
-} from './interactions.js';
-import { initPanel, openPanel, closePanel } from './panel.js';
+} from './interactions.js?v=1.2';
+import { initPanel, openPanel, closePanel } from './panel.js?v=1.2';
+import { ParcourNavigator } from './parcours.js?v=1.2';
 
 (async function main() {
   // Fetch data
@@ -26,13 +29,28 @@ import { initPanel, openPanel, closePanel } from './panel.js';
   // State
   let selectedNodeId = null;
   let graph = null;
+  let parcourNav = null;
+  let linkTooltipsEnabled = true;
 
   // Create graph
   graph = createGraph(document.getElementById('graph-svg'), data, {
-    onNodeClick: (d) => selectNode(d.id),
+    onNodeClick: (d) => {
+      if (parcourNav && parcourNav.isActive()) return;
+      selectNode(d.id);
+    },
     onNodeHover: handleNodeHover,
     onNodeLeave: handleNodeLeave,
+    onLinkHover: (event, d, nodeMap) => {
+      if (linkTooltipsEnabled) handleLinkHover(event, d, nodeMap);
+    },
+    onLinkLeave: (event, d) => {
+      if (linkTooltipsEnabled) handleLinkLeave(event, d);
+    },
     onBackgroundClick: () => {
+      if (parcourNav && parcourNav.isActive()) {
+        parcourNav.stop();
+        return;
+      }
       if (getActiveFamily()) {
         clearFamilyFilter(graph);
       }
@@ -45,6 +63,70 @@ import { initPanel, openPanel, closePanel } from './panel.js';
 
   // Build legend
   buildLegend(data.families, graph);
+
+  // ---------- Panel close in parcours mode ----------
+  document.getElementById('panel-close').addEventListener('click', () => {
+    if (parcourNav && parcourNav.isActive()) {
+      parcourNav.stop();
+    }
+  });
+
+  // ---------- Parcours épistémiques ----------
+  parcourNav = new ParcourNavigator(graph, data, {
+    onEnter: () => {
+      deselectNode();
+      clearFamilyFilter(graph);
+    },
+    onExit: () => {}
+  });
+
+  // ---------- Toggle link tooltips ----------
+  const linkTooltipCheckbox = document.querySelector('#toggle-link-tooltips input');
+  linkTooltipCheckbox.addEventListener('change', () => {
+    linkTooltipsEnabled = linkTooltipCheckbox.checked;
+  });
+
+  // Populate parcours menu
+  const parcoursMenu = document.getElementById('parcours-menu');
+  const parcoursToggle = document.getElementById('parcours-toggle');
+
+  if (data.parcours && data.parcours.length) {
+    data.parcours.forEach(p => {
+      const item = document.createElement('div');
+      item.className = 'parcours-menu-item';
+      item.innerHTML = `
+        <span class="parcours-menu-dot" style="background: ${p.color}"></span>
+        <div>
+          <div class="parcours-menu-title">${p.title}</div>
+          <div class="parcours-menu-subtitle">${p.subtitle}</div>
+        </div>
+      `;
+      item.addEventListener('click', () => {
+        parcoursMenu.classList.remove('open');
+        parcoursToggle.classList.remove('active');
+        parcourNav.start(p.id);
+      });
+      parcoursMenu.appendChild(item);
+    });
+  }
+
+  // Toggle parcours dropdown
+  parcoursToggle.addEventListener('click', () => {
+    if (parcourNav.isActive()) {
+      parcourNav.stop();
+      return;
+    }
+    parcoursMenu.classList.toggle('open');
+    parcoursToggle.classList.toggle('active');
+  });
+
+  // Close dropdown on outside click
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('.parcours-dropdown')) {
+      parcoursMenu.classList.remove('open');
+      parcoursToggle.classList.remove('active');
+    }
+  });
 
   // ---------- Node selection ----------
   function selectNode(nodeId) {
